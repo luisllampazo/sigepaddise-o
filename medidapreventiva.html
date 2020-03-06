@@ -147,154 +147,127 @@
       <div class="container-fluid">
           <div class="tile">
 			  <div class="tile-title-w-btn line-head">
-				  
-			    <h4>EXPEDIENTE NUEVO</h4>
-				  <div>
-					  <select class="form-control">
-						  <option>DENUNCIA ORDINARIA</option>
-						  <option>NOTA INFORMATIVA</option>
-					  </select>
-				  </div>
-				  <div>
-					  <input class="form-control" type="text">
+			    <h4>ADMINISTRADOS</h4>
+			    <div>
+				  <button class="btn btn-primary"><em class="fa fa-file"></em> Nueva Ampliacion de Inicio PAD</button>
 				  </div>
 			  </div>
             <div class="tile-body">
 				<div class="container-fluid">
-					<div id="infonoregular" class="row line-head mb-3" style="display:">
-						<div class="col-md-2">
-							<label>Nro de Documento</label>
-							<div class="input-group mb-3">
-								<input type="text" class="form-control" placeholder="#####">
-  								<input type="text" class="form-control input-group-append" placeholder="2020">
-						  
-</div>
-						</div>
-						<div class="col-md-3">
-							<label>Siglas</label>
-							<input class="form-control text-uppercase">
-						</div>
-						<div class="col-md-2">
-							<label>Fecha</label>
-							<input class="form-control">
-						</div>
-						<div class="col-md-5">
-							<label>Archivo</label>
-							<input type="file" class="form-control">
-						</div>
-					</div>
-					<div class="row line-head">
-					
-					<div class="col-12 mb-1"><label class="font-weight-bold">DENUNCIANTE</label></div>
-				  <div class="col-md-2">
-						<label>
-							Documento de Identidad
-						</label>
-						<select class="form-control">
-							<option value="" disabled selected>...Seleccione Una...</option>
-							<option value="" >DNI</option>
-							<option value="" >C.E.</option>
-						</select>
-					</div>
-				  <div class="col-md-2">
-						<label>Nro Documento</label>
-					  <div class="input-group mb-3">
-  <input type="text" class="form-control" placeholder="########">
-						  <button class="input-group-append btn btn-primary"><i class="fa fa-search m-0"></i></button>
-</div>
-						
-					</div>
-					<div class="col-md-2">
-					  <label>Nombres</label>
-					  <input type="text" class="form-control"/>
-				  </div>
-					<div class="col-md-2">
-					  <label>Apellido Paterno</label>
-					  <input type="text" class="form-control"/>
-				  </div>
-					<div class="col-md-2">
-					  <label>Materno</label>
-					  <input type="text" class="form-control"/>
-				  </div>
-					<div class="col-md-2">
-					  <label>Origen</label>
-					  <input type="text" class="form-control" value="POLICIAL" readonly/>
-				  </div>
-				</div>
 					<div class="row">
-						<div class="col-12 mt-3 mb-1"><label class="font-weight-bold">HECHOS</label></div>
-						<div class="col-md-3 my-2">
-							<label>Ubicación</label>
-							<select id="selectubigeo" class="form-control">
-								<option value="">LIMA - LIMA - LIMA</option>
-								<option value="">TACNA TACNA TACNA</option>
-							</select>
+					<div class="col-12 table-responsive">
+						<table id="tablaadministrados" class="table table-bordered table-striped table-sm">
+							<thead>
+								<tr>
+									<th class="text-center"><i class="fa fa-folder-open"></i></th>
+									<th class="text-center">CIP</th>
+									<th class="text-center">Apellidos y Nombres</th>
+									
+								  <th class="text-center">Estado</th>
+									<th class="text-center">Resolucion de Inicio</th>
+								<th class="text-center">Enterado</th>
+									<th class="text-center">Medida Preventiva</th>
+									
+								  
+									<th class="text-center"><i class="icofont-handcuff"></i></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+								  <td class="text-center"><button class="btn btn-info btn-sm"><em class="fa fa-folder-open-o m-0"></em></button></td>
+								  <td>391305</td>
+								  <td>CAP S LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
+								  <td>INICIO PAD</td>
+									<td class="text-center"><a href="#">RD-001-2020-DIRINV-IGPNP</a></td>
+									<td class="text-center"><span>20/02/2020</span> <button class="btn btn-info btn-sm" data-toggle="tooltip" title="Ver notificacion"><i class="fa fa-file-pdf-o m-0"></i></button></td>
+									<td class="text-center">-</td>
+									<td class="text-center">
+										<button class="btn btn-danger btn-sm medprevModal" data-toggle="tooltip" title="Medida Preventiva"><i class="icofont-handcuff m-0"></i></button>
+									</td>
+								</tr>
+								<tr>
+								  <td class="text-center"><button class="btn btn-info btn-sm"><em class="fa fa-folder-open-o m-0"></em></button></td>
+								  <td>391305</td>
+								  <td>CAP S LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
+								  <td>MEDIDA PREVENTIVA (PENDIENTE)</td>
+									<td class="text-center"><a href="#">RD-001-2020-DIRINV-IGPNP</a></td>
+									<td class="text-center"><span>20/02/2020</span> <button class="btn btn-info btn-sm" data-toggle="tooltip" title="Ver notificacion"><i class="fa fa-file-pdf-o m-0"></i></button></td>
+									<td class="text-center"> SUSPENSION TEMPORAL DEL SERVICIO</td>
+									<td class="text-center">
+										<button class="btn btn-danger btn-sm medprevModal" data-toggle="tooltip" title="Medida Preventiva"><i class="icofont-handcuff m-0"></i></button>
+									</td>
+								</tr>
+								<tr>
+								  <td class="text-center"><button class="btn btn-info btn-sm " data-toggle="tooltip" title="Ver Detalles"><i class="fa fa-folder-open-o m-0"></i></button></td>
+								  <td>391305</td>
+								  <td>CAP S LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
+								  <td>INICIO PAD</td>
+									
+									<td class="text-center"><a href="#">RD-001-2020-DIRINV-IGPNP</a></td>
+									<td class="text-center"><button class="btn btn-warning btn-sm"  data-toggle="tooltip" title="Cargar Notificación"><i class="fa fa-upload m-0"></i></button></td>
+									<td></td>
+									<td><button class="btn btn-danger btn-sm medprevModal" data-toggle="tooltip" title="Medida Preventiva" disabled><i class="icofont-handcuff m-0"></i></button>
+									</td>
+								</tr>
+							  
+							</tbody>
+						</table>
 						</div>
-						<div class="col-md-3 my-2">
-							<label>Jurisdiccion Policial</label>
-							<select id="selectcom" class="form-control">
-								<option value="">COM DE LA FAMILIA</option>
-								<option value="">COM TERMINAL TERRESTRE TACNA E</option>
-							</select>
-						</div>
-						<div class="col-md-6 my-2">
-							<label>Dirección / Referencia</label>
-							<input class="form-control"/>
-						</div>
-						<div class="col-12 my-3 pb-2">
-							<label>Descripcion de los Hechos</label>
-							<textarea class="form-control" rows="6"></textarea>
-						</div>
-						<div class="col-md-2">
-							<label>Fecha del Hecho</label>
-							<input class="form-control"/>
-						</div>
-						<div class="col-md-2">
-							<label>Hora del Hecho</label>
-							<input class="form-control"/>
-						</div>
-						<div class="col-md-2">
-							<label>Clasificacion</label>
-							<select class="form-control"></select>
-						</div>
-						<div class="col-md-2">
-							<label>Legislacion</label>
-							<select class="form-control"></select>
-						</div>
-						<div class="col-md-2">
-							<label>Geolocalizacion</label>
-							<input class="form-control"/>
-						</div>
-						<div class="col-md-2">
-							<label>Tipo Hecho</label>
-							<select class="form-control">
-								<option>ORDINARIO</option>
-							</select>
-						</div>
-						<div class="col-12 my-2">
-							<label>Información para identificación</label>
-							<textarea class="form-control" rows="4"></textarea>
-						</div>
-						<div class="col-12 my-2">
-							<label>Mas Clasificaciones</label>
-							<select id="selectclase" class="form-control" multiple></select>
-						</div>
-					</div>
+				  	
+					
+				</div>
+					
 				</div>
 				
 		    </div>
-			  <div class="tile-footer">
-							<div class="row">
-								<div class="col text-right">
-								<a class="btn btn-secondary" href="/denuncias">Cancelar</a>
-								<button type="submit" class="btn btn-primary">Guardar
-						Cambios</button>
-								</div>
-							</div>
-			</div>
+			  
           </div>
       </div>
   </main>
+	  <div class="modal fade" id="medidaprevModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Medida Preventivas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+			<div class="col-md-12 table-responsive">
+				<table class="table table-bordered table-sm">
+					<thead>
+						<tr>
+							<th>N°</th>
+							<th>Medida Preventiva</th>
+							<th>Resolución Inicio</th>
+							<th>Fecha Enterado</th>
+							<th>Documento Fin</th>
+							<th>Fecha Enterado</th>
+							<th>Fecha Enterado</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>Suspension Temporal del Servicio</td>
+							<td>RD 001-2020-IGPNP</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+		  </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
+	  
     <!-- Essential javascripts for application to work-->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -303,11 +276,18 @@
     <!-- The javascript plugin to display page loading on top-->
     <script src="js/plugins/pace.min.js"></script>
   <script src="js/plugins/select2.full.min.js"></script>
+	  <script src="js/plugins/jquery.dataTables.min.js"></script>
+	  <script src="js/plugins/dataTables.bootstrap4.min.js"></script>
+	  
     <!-- Page specific javascripts-->
     <!-- Google analytics script-->
   <script>
 		$('#selectubigeo').select2({width: '100%'});
 		$('#selectclase').select2({width: '100%'});
+	  	$('#tablaocurrencias').DataTable();
+	  $('#tablaadministrados').on('click','.medprevModal',function(){
+		  $('#medidaprevModal').modal('show');
+	  })
 	  </script>
 </body>
 </html>
