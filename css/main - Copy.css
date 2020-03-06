@@ -2014,8 +2014,8 @@ pre code {
 .form-control {
   display: block;
   width: 100%;
-  height: calc(1.2em + 0.75rem + 2px);
-  padding: 0.25rem 0.75rem;
+  height: calc(1em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1;
@@ -2023,7 +2023,7 @@ pre code {
   background-color: #FFF;
   background-clip: padding-box;
   border: 1px solid #ced4da;
-  border-radius: 2px;
+  border-radius: 4px;
   -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   -o-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -2135,19 +2135,19 @@ select.form-control:focus::-ms-value {
 }
 
 .form-control-sm {
-  height: calc(1.2em + 0.5rem + 2px);
+  height: calc(1em + 0.5rem + 4px);
   padding: 0.25rem 0.5rem;
   font-size: 0.765625rem;
   line-height: 1;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 .form-control-lg {
-  height: calc(1.2em + 1rem + 2px);
+  height: calc(1em + 1rem + 4px);
   padding: 0.5rem 1rem;
   font-size: 1.09375rem;
   line-height: 1;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 select.form-control[size], select.form-control[multiple] {
@@ -2579,9 +2579,9 @@ textarea.form-control {
           user-select: none;
   background-color: transparent;
   border: 1px solid transparent;
-  padding: 0.25rem 0.75rem;
+  padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
-  line-height: 1.5;
+  line-height: 1;
   border-radius: 3px;
   -webkit-transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, -webkit-box-shadow 0.3s cubic-bezier(0.35, 0, 0.25, 1), -webkit-transform 0.2s cubic-bezier(0.35, 0, 0.25, 1);
   transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, -webkit-box-shadow 0.3s cubic-bezier(0.35, 0, 0.25, 1), -webkit-transform 0.2s cubic-bezier(0.35, 0, 0.25, 1);
@@ -3787,7 +3787,7 @@ input[type="button"].btn-block {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0.25rem 0.75rem;
+  padding: 0.375rem 0.75rem;
   margin-bottom: 0;
   font-size: 0.875rem;
   font-weight: 400;
@@ -3797,7 +3797,7 @@ input[type="button"].btn-block {
   white-space: nowrap;
   background-color: #e9ecef;
   border: 1px solid #ced4da;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 .input-group-text input[type="radio"],
@@ -3807,7 +3807,7 @@ input[type="button"].btn-block {
 
 .input-group-lg > .form-control:not(textarea),
 .input-group-lg > .custom-select {
-  height: calc(1.2em + 1rem + 2px);
+  height: calc(1em + 1rem + 4px);
 }
 
 .input-group-lg > .form-control,
@@ -3819,12 +3819,12 @@ input[type="button"].btn-block {
   padding: 0.5rem 1rem;
   font-size: 1.09375rem;
   line-height: 1;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 .input-group-sm > .form-control:not(textarea),
 .input-group-sm > .custom-select {
-  height: calc(1.2em + 0.5rem + 2px);
+  height: calc(1em + 0.5rem + 4px);
 }
 
 .input-group-sm > .form-control,
@@ -3836,7 +3836,7 @@ input[type="button"].btn-block {
   padding: 0.25rem 0.5rem;
   font-size: 0.765625rem;
   line-height: 1;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 .input-group-lg > .custom-select,
@@ -3992,8 +3992,8 @@ input[type="button"].btn-block {
 }
 
 .custom-switch .custom-control-label::after {
-  top: calc(0.15625rem + 2px);
-  left: calc(-2.25rem + 2px);
+  top: calc(0.15625rem + 4px);
+  left: calc(-2.25rem + 4px);
   width: calc(1rem - 8px);
   height: calc(1rem - 8px);
   background-color: #adb5bd;
@@ -4027,7 +4027,7 @@ input[type="button"].btn-block {
 .custom-select {
   display: inline-block;
   width: 100%;
-  height: calc(1.2em + 0.75rem + 2px);
+  height: calc(1em + 0.75rem + 2px);
   padding: 0.375rem 1.75rem 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 400;
@@ -4071,7 +4071,7 @@ input[type="button"].btn-block {
 }
 
 .custom-select-sm {
-  height: calc(1.2em + 0.5rem + 2px);
+  height: calc(1em + 0.5rem + 4px);
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   padding-left: 0.5rem;
@@ -4079,7 +4079,7 @@ input[type="button"].btn-block {
 }
 
 .custom-select-lg {
-  height: calc(1.2em + 1rem + 2px);
+  height: calc(1em + 1rem + 4px);
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
@@ -4090,7 +4090,7 @@ input[type="button"].btn-block {
   position: relative;
   display: inline-block;
   width: 100%;
-  height: calc(1.2em + 0.75rem + 2px);
+  height: calc(1em + 0.75rem + 2px);
   margin-bottom: 0;
 }
 
@@ -4098,7 +4098,7 @@ input[type="button"].btn-block {
   position: relative;
   z-index: 2;
   width: 100%;
-  height: calc(1.2em + 0.75rem + 2px);
+  height: calc(1em + 0.75rem + 2px);
   margin: 0;
   opacity: 0;
 }
@@ -4127,14 +4127,14 @@ input[type="button"].btn-block {
   right: 0;
   left: 0;
   z-index: 1;
-  height: calc(1.2em + 0.75rem + 2px);
-  padding: 0.25rem 0.75rem;
+  height: calc(1em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
   font-weight: 400;
   line-height: 1;
   color: #495057;
   background-color: #FFF;
   border: 1px solid #ced4da;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 .custom-file-label::after {
@@ -4144,14 +4144,14 @@ input[type="button"].btn-block {
   bottom: 0;
   z-index: 3;
   display: block;
-  height: calc(1.2em + 0.75rem);
-  padding: 0.25rem 0.75rem;
+  height: calc(1em + 0.75rem);
+  padding: 0.375rem 0.75rem;
   line-height: 1;
   color: #495057;
   content: "Buscar";
   background-color: #e9ecef;
   border-left: inherit;
-  border-radius: 0 2px 2px 0;
+  border-radius: 0 4px 4px 0;
 }
 
 .custom-range {
@@ -10858,7 +10858,7 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
  * Licensed under the Apache License v2.0 (http://www.apache.org/licenses/LICENSE-2.0)
  */
 .datepicker {
-  border-radius: 2px;
+  border-radius: 4px;
   direction: ltr;
 }
 
@@ -10877,7 +10877,7 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
 .datepicker-dropdown {
   top: 0;
   left: 0;
-  padding: 2px;
+  padding: 4px;
 }
 
 .datepicker-dropdown:before {
@@ -10951,7 +10951,7 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
   text-align: center;
   width: 30px;
   height: 30px;
-  border-radius: 2px;
+  border-radius: 4px;
   border: none;
 }
 
@@ -11517,7 +11517,7 @@ fieldset[disabled] .datepicker table tr td.active.highlighted.focus {
   float: left;
   margin: 1%;
   cursor: pointer;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 .datepicker table tr td span:hover {
@@ -12789,7 +12789,7 @@ body.stop-scrolling {
           box-sizing: border-box;
   cursor: pointer;
   display: block;
-  /*height: 35px;*/
+  height: 35px;
   -moz-user-select: none;
    -ms-user-select: none;
        user-select: none;
@@ -12857,7 +12857,7 @@ body.stop-scrolling {
 .select2-dropdown {
   background-color: white;
   border: 1px solid #ced4da;
-  border-radius: 2px;
+  border-radius: 4px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: block;
@@ -12957,7 +12957,7 @@ body.stop-scrolling {
 .select2-container--default .select2-selection--single {
   background-color: #fff;
   border: 1px solid #ced4da;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
@@ -13022,7 +13022,7 @@ body.stop-scrolling {
 .select2-container--default .select2-selection--multiple {
   background-color: white;
   border: 1px solid #ced4da;
-  border-radius: 2px;
+  border-radius: 4px;
   cursor: text;
 }
 
@@ -16025,7 +16025,7 @@ be a descendant of the grid when it is being dragged.
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-radius: 2px;
+  border-radius: 4px;
   color: #FFF;
   margin-bottom: 30px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
@@ -16045,7 +16045,7 @@ be a descendant of the grid when it is being dragged.
           justify-content: center;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 2px 0 0 2px;
+  border-radius: 4px 0 0 4px;
   font-size: 2.5rem;
 }
 
@@ -16326,7 +16326,7 @@ be a descendant of the grid when it is being dragged.
 }
 
 .features-card {
-  border-radius: 2px;
+  border-radius: 4px;
   padding: 10px;
   font-size: 1.143em;
   text-align: center;

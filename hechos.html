@@ -101,8 +101,8 @@
       </div>
       <ul class="app-menu">
         <li><a class="app-menu__item" href="index.html"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Resumen</span></a></li>
-		  <li><a class="app-menu__item" href="charts.html"><i class="app-menu__icon fa fa-pencil-square-o"></i><span class="app-menu__label">Denuncia</span></a></li>
-		  <li><a class="app-menu__item" href="charts.html"><i class="app-menu__icon fa fa-laptop"></i><span class="app-menu__label">Tramite Documentario</span></a></li>
+        <li><a class="app-menu__item" href="charts.html"><em class="app-menu__icon fa fa-pencil-square-o"></em><span class="app-menu__label">OD Turno</span></a></li>
+        <li><a class="app-menu__item" href="charts.html"><i class="app-menu__icon fa fa-laptop"></i><span class="app-menu__label">Tramite Documentario</span></a></li>
         <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-laptop"></i><span class="app-menu__label">Tramite Documentario</span><i class="treeview-indicator fa fa-angle-right"></i></a>
           <ul class="treeview-menu">
             <li><a class="treeview-item" href="bootstrap-components.html"><i class="icon fa fa-circle-o"></i> Bootstrap Elements</a></li>
@@ -143,21 +143,142 @@
     <main class="app-content">
       <div class="app-title">
         <div>
-          <h1><i class="fa fa-dashboard"></i> Blank Page</h1>
-          <p>Start a beautiful journey here</p>
+          <h1><em class="fa fa-pencil-square-o"></em> Oficina de Disciplina de Turno</h1>
+          <p>Recepción de Hechos</p>
         </div>
         <ul class="app-breadcrumb breadcrumb">
           <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
-          <li class="breadcrumb-item"><a href="#">Denuncia</a></li>
-			<li class="breadcrumb-item">Nueva Denuncia</li>
+          <li class="breadcrumb-item"><a href="#">OD Turno</a></li>
+			<li class="breadcrumb-item">Expediente</li>
         </ul>
       </div>
-      <div class="row">
-        <div class="col-md-12">
+      <div class="container-fluid">
           <div class="tile">
-            <div class="tile-body">Create a beautiful dashboard</div>
+			  <div class="tile-title-w-btn line-head">
+				  
+			    <h4>EXPEDIENTE NUEVO</h4>
+				  <div>
+					  <select class="form-control">
+						  <option>DENUNCIA ORDINARIA</option>
+						  <option>NOTA INFORMATIVA</option>
+					  </select>
+				  </div>
+				  <div>
+					  <input class="form-control" type="text">
+				  </div>
+			  </div>
+            <div class="tile-body">
+				<div class="container-fluid">
+					<div class="row line-head">
+					
+					<div class="col-12 mb-1"><label class="font-weight-bold">DENUNCIANTE</label></div>
+				  <div class="col-md-2">
+						<label>
+							Documento de Identidad
+						</label>
+						<select class="form-control">
+							<option value="" disabled selected>...Seleccione Una...</option>
+							<option value="" >DNI</option>
+							<option value="" >C.E.</option>
+						</select>
+					</div>
+				  <div class="col-md-2">
+						<label>Nro Documento</label>
+					  <div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="########">
+						  <button class="input-group-append btn btn-primary"><i class="fa fa-search m-0"></i></button>
+</div>
+						
+					</div>
+					<div class="col-md-2">
+					  <label>Nombres</label>
+					  <input type="text" class="form-control"/>
+				  </div>
+					<div class="col-md-2">
+					  <label>Apellido Paterno</label>
+					  <input type="text" class="form-control"/>
+				  </div>
+					<div class="col-md-2">
+					  <label>Materno</label>
+					  <input type="text" class="form-control"/>
+				  </div>
+					<div class="col-md-2">
+					  <label>Origen</label>
+					  <input type="text" class="form-control" value="POLICIAL" readonly/>
+				  </div>
+				</div>
+					<div class="row">
+						<div class="col-12 mt-3 mb-1"><label class="font-weight-bold">HECHOS</label></div>
+						<div class="col-md-3 my-2">
+							<label>Ubicación</label>
+							<select id="selectubigeo" class="form-control">
+								<option value="">LIMA - LIMA - LIMA</option>
+								<option value="">TACNA TACNA TACNA</option>
+							</select>
+						</div>
+						<div class="col-md-3 my-2">
+							<label>Jurisdiccion Policial</label>
+							<select id="selectcom" class="form-control">
+								<option value="">COM DE LA FAMILIA</option>
+								<option value="">COM TERMINAL TERRESTRE TACNA E</option>
+							</select>
+						</div>
+						<div class="col-md-6 my-2">
+							<label>Dirección / Referencia</label>
+							<input class="form-control"/>
+						</div>
+						<div class="col-12 my-3 pb-2">
+							<label>Descripcion de los Hechos</label>
+							<textarea class="form-control" rows="6"></textarea>
+						</div>
+						<div class="col-md-2">
+							<label>Fecha del Hecho</label>
+							<input class="form-control"/>
+						</div>
+						<div class="col-md-2">
+							<label>Hora del Hecho</label>
+							<input class="form-control"/>
+						</div>
+						<div class="col-md-2">
+							<label>Clasificacion</label>
+							<select class="form-control"></select>
+						</div>
+						<div class="col-md-2">
+							<label>Legislacion</label>
+							<select class="form-control"></select>
+						</div>
+						<div class="col-md-2">
+							<label>Geolocalizacion</label>
+							<input class="form-control"/>
+						</div>
+						<div class="col-md-2">
+							<label>Tipo Hecho</label>
+							<select class="form-control">
+								<option>ORDINARIO</option>
+							</select>
+						</div>
+						<div class="col-12 my-2">
+							<label>Información para identificación</label>
+							<textarea class="form-control" rows="4"></textarea>
+						</div>
+						<div class="col-12 my-2">
+							<label>Mas Clasificaciones</label>
+							<select id="selectclase" class="form-control" multiple></select>
+						</div>
+					</div>
+				</div>
+				
+			  </div>
+			  <div class="tile-footer">
+							<div class="row">
+								<div class="col text-right">
+								<a class="btn btn-secondary" href="/denuncias">Cancelar</a>
+								<button type="submit" class="btn btn-primary">Guardar
+						Cambios</button>
+								</div>
+							</div>
+			</div>
           </div>
-        </div>
       </div>
     </main>
     <!-- Essential javascripts for application to work-->
@@ -167,17 +288,12 @@
     <script src="js/main.js"></script>
     <!-- The javascript plugin to display page loading on top-->
     <script src="js/plugins/pace.min.js"></script>
+  <script src="js/plugins/select2.full.min.js"></script>
     <!-- Page specific javascripts-->
     <!-- Google analytics script-->
-    <script type="text/javascript">
-      if(document.location.hostname == 'pratikborsadiya.in') {
-      	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      	ga('create', 'UA-72504830-1', 'auto');
-      	ga('send', 'pageview');
-      }
-    </script>
-  </body>
+  <script>
+		$('#selectubigeo').select2({width: '100%'});
+		$('#selectclase').select2({width: '100%'});
+	  </script>
+</body>
 </html>
