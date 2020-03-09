@@ -155,7 +155,59 @@
       <div class="row">
         <div class="col-md-12">
           <div class="tile">
-            <div class="tile-body">Create a beautiful dashboard</div>
+          <div class="card mb-4">
+				<form id="form-denuncia" th:action="@{/denuncias/regular}" method="post">
+					<div class="card-body">
+						<div class="row">
+						<div class="col-md-3">
+							<label>Estado</label>
+							<select id="estado" name="estado" class="form-control">
+								<option value="1">REGISTRADOS</option>
+								<option value="2">ATENDIDOS</option>
+								<option value="3">TODOS</option>
+							</select>
+						</div>
+						<div class="col-md-2">
+					<label>Desde</label>
+					<div class="input-group" id="fechaDesdeGroup">
+						<input type="text" class="form-control date" id="fechadesde" name="fechadesde" required>
+						<span class="input-group-append input-group-addon">
+							<span class="input-group-text">
+								<i class="fa fa-calendar"></i>
+							</span>
+						</span>
+					</div>
+							</div>
+							
+				<div class="col-md-2">
+					<label>Hasta</label>
+					
+					<div class="input-group" id="fechaHastaGroup">
+						<input type="text" class="form-control date" id="fechahasta" name="fechahasta" required>
+						<span class="input-group-append input-group-addon">
+							<span class="input-group-text">
+								<i class="fa fa-calendar"></i>
+							</span>
+						</span>
+					</div>
+							</div>
+							<div class="col-md-3">
+							  <label>Denunciado</label>
+							  <input class="form-control text-uppercase" id="" name="denunciado" placeholder="DENUNCIADO"/>
+						</div>
+							<div class="col-md-2">
+							<label class="text-white">.</label>
+							<button type="button" id="buscadenuncia" class="btn btn-primary form-control"><i class="fa fa-search"></i>Buscar</button>
+						</div>
+					</div>
+						<div class="table-responsive">
+							<table class="table">
+							</table>
+						</div>
+						
+					</div>
+					</form>
+				</div>
           </div>
         </div>
       </div>
