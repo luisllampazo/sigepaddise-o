@@ -32,7 +32,8 @@
         
         <!--Notification Menu-->
         <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Show notifications"><i class="fa fa-bell-o fa-lg"></i></a>
-          <ul class="app-notification dropdown-menu dropdown-menu-right">
+          <!--
+<ul class="app-notification dropdown-menu dropdown-menu-right">
             <li class="app-notification__title">Tiene 4 notificaciones.</li>
             <div class="app-notification__content">
               <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></span>
@@ -69,12 +70,12 @@
               </div>
             </div>
             <li class="app-notification__footer"><a href="#">See all notifications.</a></li>
-          </ul>
+          </ul>-->
         </li>
         <!-- User Menu-->
         <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-user fa-lg"></i></a>
           <ul class="dropdown-menu settings-menu dropdown-menu-right">
-            <li><a class="dropdown-item" href="page-user.html"><i class="fa fa-cog fa-lg"></i> Settings</a></li>
+            <li><a class="dropdown-item" href="page-user.html"><i class="fa fa-cog fa-lg"></i> Configuracion</a></li>
             <li><a class="dropdown-item" href="page-user.html"><i class="fa fa-user fa-lg"></i> Perfil</a></li>
             <li><a class="dropdown-item" href="page-login.html"><i class="fa fa-sign-out fa-lg"></i> Cerrar sesion</a></li>
           </ul>
@@ -85,7 +86,7 @@
     <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
     <aside class="app-sidebar">
 		<div class="text-center">
-		<img class="app-sidebar__user-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg" alt="User Image">
+		<img id="imguser" class="app-sidebar__user-avatar img-fluid m-0 px-5" src="img/usuario.png" alt="User Image">
       </div>
       <div class="app-sidebar__user">
 		<div style="width: 100%" class="text-center">
@@ -144,276 +145,11 @@
       </div>
       <div class="container-fluid">
           <div class="tile">
-			  <div class="tile-title-w-btn line-head">
-			    <h4>ADMINISTRADOS</h4>
-			    <div>
-				  <button class="btn btn-primary"><em class="fa fa-file"></em> Agregar Administrados</button>
-						<button id="btnmedprev" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseMedida" aria-expanded="false" aria-controls="collapseMedida"><em class="fa fa-folder-o"></em> Medida Preventiva </button>
-					<button id="btnaddprev" class="btn btn-primary" type="button" style="display: none;"><em class="fa fa-file-text"></em> </button>
-				  </div>
-			  </div>
-            <div class="tile-body">
-				<div class="container-fluid">
-					<div class="row mb-3 collapse" id="collapseMedida">
-					<div class="col-12 table-responsive">
-						<table id="tablamedidas" class="table table-bordered table-striped table-sm">
-							<thead>
-								<tr>
-									<th class="text-center"><em class="fa fa-file-pdf-o"></em></th>
-									<th class="text-center">N° de Resolución</th>
-									<th class="text-center">Fecha de Documento</th>
-								  <th class="text-center">Tipo Documento</th>
-									<th><i class="fa fa-pencil-square-o"></i></th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-								  <td><button class="btn btn-info btn-sm" data-toggle="tooltip" title="Ver Documento"><i class="fa fa-file-pdf-o m-0"></i></button></td>
-								  <td>RD-001-2020-IGPNP</td>
-								  <td>07/03/2020</td>
-								  <td>INICIO MEDIDA PREVENTIVA</td>
-									<td>
-									  <button class="btn btn-primary btn-sm medprevModal" data-toggle="tooltip" title="Modificar">
-											<i class="fa fa-pencil m-0"></i></button>
-									  <button class="btn btn-warning btn-sm medprevModal" data-toggle="tooltip" title="Guardar">
-											<i class="fa fa-unlock-alt m-0"></i></button>
-										<button class="btn btn-danger btn-sm medprevModal" data-toggle="tooltip" title="Eliminar">
-											<i class="fa fa-trash m-0"></i></button>
-								  </td>
-								</tr>
-								<tr>
-								  <td class="text-center align-middle"><button class="btn btn-info btn-sm" data-toggle="tooltip" title="Ver Documento"><i class="fa fa-file-pdf-o m-0"></i></button></td>
-								  <td>RD-001-2020-IGPNP</td>
-								  <td>07/03/2020</td>
-								  <td>FIN MEDIDA PREVENTIVA</td>
-									<td>
-										<button class="btn btn-primary btn-sm medprevModal" data-toggle="tooltip" title="Modificar">
-											<i class="fa fa-pencil m-0"></i></button>
-										<button class="btn btn-warning btn-sm medprevModal" data-toggle="tooltip" title="Guardar">
-											<i class="fa fa-unlock-alt m-0"></i></button>
-										<button class="btn btn-danger btn-sm medprevModal" data-toggle="tooltip" title="Eliminar">
-											<i class="fa fa-trash m-0"></i></button>
-								  </td>
-								</tr>
-							  <tr>
-								  <td class="text-center align-middle"><button class="btn btn-info btn-sm" data-toggle="tooltip" title="Ver Documento"><i class="fa fa-file-pdf-o m-0"></i></button></td>
-								  <td>RD-001-2020-IGPNP</td>
-								  <td>07/03/2020</td>
-								  <td>VARIACION MEDIDA PREVENTIVA</td>
-									<td class="text-center">
-										<button class="btn btn-info btn-sm medprevModal" data-toggle="tooltip" title="Administrados">
-											<span>2</span> <i class="fa fa-user m-0"></i></button>
-							    </td>
-									
-									
-							  </tr>
-								
-								
-							  
-							</tbody>
-						</table>
-						</div>
-				  	
-					
-				</div>
-					
-					<div class="row">
-					<div class="col-12 table-responsive">
-						<table id="tablaadministrados" class="table table-bordered table-striped table-sm">
-							<thead>
-								<tr>
-									<th class="text-center"><i class="fa fa-folder-open"></i></th>
-									<th class="text-center">CIP</th>
-									<th class="text-center">Apellidos y Nombres</th>
-									
-								  <th class="text-center">Estado</th>
-									<th class="text-center">Resolucion de Inicio</th>
-								<th class="text-center">Enterado Inicio</th>
-									<th class="text-center">Medida Preventiva</th>
-									
-								  
-									<th class="text-center">Enterado M/P</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-								  <td class="text-center"><button class="btn btn-info btn-sm"><em class="fa fa-folder-open-o m-0"></em></button></td>
-								  <td>391305</td>
-								  <td>CAP S LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
-								  <td>INICIO PAD</td>
-									<td class="text-center"><a href="#">RD-001-2020-DIRINV-IGPNP</a></td>
-									<td class="text-center"><span>20/02/2020</span> <button class="btn btn-info btn-sm" data-toggle="tooltip" title="Ver notificacion"><i class="fa fa-file-pdf-o m-0"></i></button></td>
-									<td class="text-center">-</td>
-									<td class="text-center">
-										<button class="btn btn-warning btn-sm medprevModal" data-toggle="tooltip" title="Medida Preventiva">
-											<i class="fa fa-upload m-0"></i></button>
-									</td>
-								</tr>
-								<tr>
-								  <td class="text-center"><button class="btn btn-info btn-sm"><em class="fa fa-folder-open-o m-0"></em></button></td>
-								  <td>391305</td>
-								  <td>CAP S LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
-								  <td>MEDIDA PREVENTIVA (PENDIENTE)</td>
-									<td class="text-center"><a href="#">RD-001-2020-DIRINV-IGPNP</a></td>
-									<td class="text-center"><span>20/02/2020</span> <button class="btn btn-info btn-sm" data-toggle="tooltip" title="Ver notificacion"><i class="fa fa-file-pdf-o m-0"></i></button></td>
-									<td class="text-center"> SUSPENSION TEMPORAL DEL SERVICIO</td>
-									<td class="text-center"><span>20/02/2020</span> 
-										<button class="btn btn-danger btn-sm medprevModal" data-toggle="tooltip" title="Medida Preventiva"><i class="fa fa-file-pdf-o m-0"></i></button>
-									</td>
-								</tr>
-								<tr>
-								  <td class="text-center"><button class="btn btn-info btn-sm " data-toggle="tooltip" title="Ver Detalles"><i class="fa fa-folder-open-o m-0"></i></button></td>
-								  <td>391305</td>
-								  <td>CAP S LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
-								  <td>INICIO PAD</td>
-									
-									<td class="text-center"><a href="#">RD-001-2020-DIRINV-IGPNP</a></td>
-									<td class="text-center"><button class="btn btn-warning btn-sm"  data-toggle="tooltip" title="Cargar Notificación"><i class="fa fa-upload m-0"></i></button></td>
-									<td></td>
-									<td><button class="btn btn-danger btn-sm medprevModal" data-toggle="tooltip" title="Medida Preventiva" disabled><i class="icofont-handcuff m-0"></i></button>
-									</td>
-								</tr>
-							  
-							</tbody>
-						</table>
-						</div>
-				  	
-					
-				</div>
-					
-				</div>
-				
-		    </div>
 			  
           </div>
       </div>
   </main>
-<div class="modal fade" id="medidaprevModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xl" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Medida Preventivas</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-		  <div class="row mb-3">
-			  <div class="col-md-5">
-				  <label>Nro Resolución</label>
-				  <div class="input-group">
-					  <input class="form-control" placeholder="####">
-					  <input class="form-control" placeholder="2020">
-					  <input class="form-control" value="IG-PNP-DIRINV-OD14" readonly>
-				  </div>
-			  </div>
-			  <div class="col-md-2">
-				  <label>Fecha</label>
-				  <input class="form-control">
-			  </div>
-			  <div class="col-md-5">
-				  <label>Archivo</label>
-				  <input class="form-control" type="file">
-			  </div>
-		  </div>
-        <div class="row">
-			<div class="col-md-12">
-				
-				
-				<div class="table-responsive">
-				<table class="table table-bordered table-striped table-sm">
-					<thead>
-						<tr>
-							<th>CIP</th>
-							<th>Apellidos y Nombres</th>
-							<th>Situacion</th>
-							<th>Accion</th>
-							<th>Medida Preventiva</th>
-							
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>391305</td>
-							<td>CAP S LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
-							<td>Inicio PAD</td>
-							<td>
-								<select class="form-control ">
-									<option>Ninguno</option>
-									<option>Imponer</option>
-									<option>Levantar</option>
-									<option>Variar</option>
-								</select>
-							</td>
-							<td>
-								<select class="form-control ">
-									<option>Ninguno</option>
-									<option>Suspension Temporal del Servicio</option>
-									<option>Separacion Temporal del Cargo</option>
-									<option>Cese Temporal del Empleo</option>
-								</select>
-							</td>
-							
-						</tr>
-						<tr>
-							<td>391305</td>
-							<td>CAP S LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
-							<td>STS</td>
-							<td>
-								<select class="form-control ">
-									<option>Ninguno</option>
-									<option>Imponer</option>
-									<option>Levantar</option>
-									<option>Variar</option>
-								</select>
-							</td>
-							<td>
-								<select class="form-control ">
-									<option>Ninguno</option>
-									<option>Suspension Temporal del Servicio</option>
-									<option>Separacion Temporal del Cargo</option>
-									<option>Cese Temporal del Empleo</option>
-								</select>
-							</td>
-							
-						</tr>
-						<tr>
-							<td>391305</td>
-							<td>CAP S LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
-							<td>STS</td>
-							<td>
-								<select class="form-control ">
-									<option>Ninguno</option>
-									<option>Imponer</option>
-									<option>Levantar</option>
-									<option>Variar</option>
-								</select>
-							</td>
-							<td>
-								<select class="form-control ">
-									<option>Ninguno</option>
-									<option>Suspension Temporal del Servicio</option>
-									<option>Separacion Temporal del Cargo</option>
-									<option>Cese Temporal del Empleo</option>
-								</select>
-							</td>
-							
-						</tr>
-					</tbody>
-				</table>
-				</div>
-				
-			</div>
-			
-		  </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-primary">Guardar cambios</button>
-      </div>
-    </div>
-  </div>
-</div>
+
 	  
     <!-- Essential javascripts for application to work-->
     <script src="js/jquery-3.2.1.min.js"></script>
@@ -429,6 +165,17 @@
     <!-- Page specific javascripts-->
     <!-- Google analytics script-->
   <script>
+	  $('.app-sidebar__toggle').on('click',function(){
+		  if($('body').hasClass('sidenav-toggled'))
+			  {
+				  $('#imguser').removeClass('px-5');
+				  }
+		  else{
+			  $('#imguser').addClass('px-5');
+		  }
+	  });
+	  
+	  
 		$('#selectubigeo').select2({width: '100%'});
 		$('#selectclase').select2({width: '100%'});
 	  	$('#tablaadministrados').DataTable();
