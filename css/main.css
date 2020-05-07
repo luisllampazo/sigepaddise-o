@@ -5,7 +5,6 @@
  * ================================*/
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,400i,700);
 @import url(https://fonts.googleapis.com/css?family=Niconne);
-@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -26,7 +25,7 @@
   --white: #FFF;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #1C8060;
+  --primary: #009688;
   --secondary: #6c757d;
   --success: #28a745;
   --info: #17a2b8;
@@ -66,7 +65,7 @@ body {
   font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 0.875rem;
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.5;
   color: #212529;
   text-align: left;
   background-color: #FFF;
@@ -163,7 +162,7 @@ sup {
 }
 
 a {
-  color: #1C8060;
+  color: #009688;
   text-decoration: none;
   background-color: transparent;
 }
@@ -2014,16 +2013,16 @@ pre code {
 .form-control {
   display: block;
   width: 100%;
-  height: calc(1.2em + 0.75rem + 2px);
-  padding: 0.25rem 0.75rem;
+  height: calc(1.5em + 0.75rem + 4px);
+  padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.5;
   color: #495057;
   background-color: #FFF;
   background-clip: padding-box;
-  border: 1px solid #ced4da;
-  border-radius: 2px;
+  border: 2px solid #ced4da;
+  border-radius: 4px;
   -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   -o-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -2047,7 +2046,7 @@ pre code {
 .form-control:focus {
   color: #495057;
   background-color: #FFF;
-  border-color: #1C8060;
+  border-color: #009688;
   outline: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -2099,21 +2098,21 @@ select.form-control:focus::-ms-value {
   padding-bottom: calc(0.375rem + 2px);
   margin-bottom: 0;
   font-size: inherit;
-  line-height: 1;
+  line-height: 1.5;
 }
 
 .col-form-label-lg {
   padding-top: calc(0.5rem + 2px);
   padding-bottom: calc(0.5rem + 2px);
   font-size: 1.09375rem;
-  line-height: 1;
+  line-height: 1.5;
 }
 
 .col-form-label-sm {
   padding-top: calc(0.25rem + 2px);
   padding-bottom: calc(0.25rem + 2px);
   font-size: 0.765625rem;
-  line-height: 1;
+  line-height: 1.5;
 }
 
 .form-control-plaintext {
@@ -2122,7 +2121,7 @@ select.form-control:focus::-ms-value {
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
   margin-bottom: 0;
-  line-height: 1;
+  line-height: 1.5;
   color: #212529;
   background-color: transparent;
   border: solid transparent;
@@ -2135,19 +2134,19 @@ select.form-control:focus::-ms-value {
 }
 
 .form-control-sm {
-  height: calc(1.2em + 0.5rem + 2px);
+  height: calc(1.5em + 0.5rem + 4px);
   padding: 0.25rem 0.5rem;
   font-size: 0.765625rem;
-  line-height: 1;
-  border-radius: 2px;
+  line-height: 1.5;
+  border-radius: 4px;
 }
 
 .form-control-lg {
-  height: calc(1.2em + 1rem + 2px);
+  height: calc(1.5em + 1rem + 4px);
   padding: 0.5rem 1rem;
   font-size: 1.09375rem;
-  line-height: 1;
-  border-radius: 2px;
+  line-height: 1.5;
+  border-radius: 4px;
 }
 
 select.form-control[size], select.form-control[multiple] {
@@ -2238,7 +2237,7 @@ textarea.form-control {
   padding: 0.25rem 0.5rem;
   margin-top: .1rem;
   font-size: 0.765625rem;
-  line-height: 1;
+  line-height: 1.5;
   color: #FFF;
   background-color: rgba(40, 167, 69, 0.9);
   border-radius: 0.25rem;
@@ -2246,7 +2245,7 @@ textarea.form-control {
 
 .was-validated .form-control:valid, .form-control.is-valid {
   border-color: #28a745;
-  padding-right: calc(1em + 0.75rem);
+  padding-right: calc(1.5em + 0.75rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: center right calc(0.375em + 0.1875rem);
@@ -2266,7 +2265,7 @@ textarea.form-control {
 }
 
 .was-validated textarea.form-control:valid, textarea.form-control.is-valid {
-  padding-right: calc(1em + 0.75rem);
+  padding-right: calc(1.5em + 0.75rem);
   background-position: top calc(0.375em + 0.1875rem) right calc(0.375em + 0.1875rem);
 }
 
@@ -2365,7 +2364,7 @@ textarea.form-control {
   padding: 0.25rem 0.5rem;
   margin-top: .1rem;
   font-size: 0.765625rem;
-  line-height: 1;
+  line-height: 1.5;
   color: #FFF;
   background-color: rgba(220, 53, 69, 0.9);
   border-radius: 0.25rem;
@@ -2373,7 +2372,7 @@ textarea.form-control {
 
 .was-validated .form-control:invalid, .form-control.is-invalid {
   border-color: #dc3545;
-  padding-right: calc(1em + 0.75rem);
+  padding-right: calc(1.5em + 0.75rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23dc3545' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23dc3545' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E");
   background-repeat: no-repeat;
   background-position: center right calc(0.375em + 0.1875rem);
@@ -2393,7 +2392,7 @@ textarea.form-control {
 }
 
 .was-validated textarea.form-control:invalid, textarea.form-control.is-invalid {
-  padding-right: calc(1em + 0.75rem);
+  padding-right: calc(1.5em + 0.75rem);
   background-position: top calc(0.375em + 0.1875rem) right calc(0.375em + 0.1875rem);
 }
 
@@ -2578,8 +2577,8 @@ textarea.form-control {
       -ms-user-select: none;
           user-select: none;
   background-color: transparent;
-  border: 1px solid transparent;
-  padding: 0.25rem 0.75rem;
+  border: 2px solid transparent;
+  padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   line-height: 1.5;
   border-radius: 3px;
@@ -2620,8 +2619,8 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #FFF;
-  background-color: #1C8060;
-  border-color: #1C8060;
+  background-color: #009688;
+  border-color: #009688;
 }
 
 .btn-primary:hover {
@@ -2637,8 +2636,8 @@ fieldset:disabled a.btn {
 
 .btn-primary.disabled, .btn-primary:disabled {
   color: #FFF;
-  background-color: #1C8060;
-  border-color: #1C8060;
+  background-color: #009688;
+  border-color: #009688;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
@@ -2907,14 +2906,14 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-primary {
-  color: #1C8060;
-  border-color: #1C8060;
+  color: #009688;
+  border-color: #009688;
 }
 
 .btn-outline-primary:hover {
   color: #FFF;
-  background-color: #1C8060;
-  border-color: #1C8060;
+  background-color: #009688;
+  border-color: #009688;
 }
 
 .btn-outline-primary:focus, .btn-outline-primary.focus {
@@ -2923,15 +2922,15 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-primary.disabled, .btn-outline-primary:disabled {
-  color: #1C8060;
+  color: #009688;
   background-color: transparent;
 }
 
 .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
 .show > .btn-outline-primary.dropdown-toggle {
   color: #FFF;
-  background-color: #1C8060;
-  border-color: #1C8060;
+  background-color: #009688;
+  border-color: #009688;
 }
 
 .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
@@ -3180,7 +3179,7 @@ fieldset:disabled a.btn {
 
 .btn-link {
   font-weight: 400;
-  color: #1C8060;
+  color: #009688;
   text-decoration: none;
 }
 
@@ -3203,14 +3202,14 @@ fieldset:disabled a.btn {
 .btn-lg, .btn-group-lg > .btn {
   padding: 0.5rem 1rem;
   font-size: 1.09375rem;
-  line-height: 1;
+  line-height: 1.5;
   border-radius: 3px;
 }
 
 .btn-sm, .btn-group-sm > .btn {
   padding: 0.25rem 0.5rem;
   font-size: 0.765625rem;
-  line-height: 1;
+  line-height: 1.5;
   border-radius: 3px;
 }
 
@@ -3498,7 +3497,7 @@ input[type="button"].btn-block {
 .dropdown-item.active, .dropdown-item:active {
   color: #FFF;
   text-decoration: none;
-  background-color: #1C8060;
+  background-color: #009688;
 }
 
 .dropdown-item.disabled, .dropdown-item:disabled {
@@ -3787,17 +3786,17 @@ input[type="button"].btn-block {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0.25rem 0.75rem;
+  padding: 0.375rem 0.75rem;
   margin-bottom: 0;
   font-size: 0.875rem;
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.5;
   color: #495057;
   text-align: center;
   white-space: nowrap;
   background-color: #e9ecef;
-  border: 1px solid #ced4da;
-  border-radius: 2px;
+  border: 2px solid #ced4da;
+  border-radius: 4px;
 }
 
 .input-group-text input[type="radio"],
@@ -3807,7 +3806,7 @@ input[type="button"].btn-block {
 
 .input-group-lg > .form-control:not(textarea),
 .input-group-lg > .custom-select {
-  height: calc(1.2em + 1rem + 2px);
+  height: calc(1.5em + 1rem + 4px);
 }
 
 .input-group-lg > .form-control,
@@ -3818,13 +3817,13 @@ input[type="button"].btn-block {
 .input-group-lg > .input-group-append > .btn {
   padding: 0.5rem 1rem;
   font-size: 1.09375rem;
-  line-height: 1;
-  border-radius: 2px;
+  line-height: 1.5;
+  border-radius: 4px;
 }
 
 .input-group-sm > .form-control:not(textarea),
 .input-group-sm > .custom-select {
-  height: calc(1.2em + 0.5rem + 2px);
+  height: calc(1.5em + 0.5rem + 4px);
 }
 
 .input-group-sm > .form-control,
@@ -3835,8 +3834,8 @@ input[type="button"].btn-block {
 .input-group-sm > .input-group-append > .btn {
   padding: 0.25rem 0.5rem;
   font-size: 0.765625rem;
-  line-height: 1;
-  border-radius: 2px;
+  line-height: 1.5;
+  border-radius: 4px;
 }
 
 .input-group-lg > .custom-select,
@@ -3886,8 +3885,8 @@ input[type="button"].btn-block {
 
 .custom-control-input:checked ~ .custom-control-label::before {
   color: #FFF;
-  border-color: #1C8060;
-  background-color: #1C8060;
+  border-color: #009688;
+  background-color: #009688;
 }
 
 .custom-control-input:focus ~ .custom-control-label::before {
@@ -3896,7 +3895,7 @@ input[type="button"].btn-block {
 }
 
 .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
-  border-color: #1C8060;
+  border-color: #009688;
 }
 
 .custom-control-input:not(:disabled):active ~ .custom-control-label::before {
@@ -3952,8 +3951,8 @@ input[type="button"].btn-block {
 }
 
 .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::before {
-  border-color: #1C8060;
-  background-color: #1C8060;
+  border-color: #009688;
+  background-color: #009688;
 }
 
 .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::after {
@@ -3992,8 +3991,8 @@ input[type="button"].btn-block {
 }
 
 .custom-switch .custom-control-label::after {
-  top: calc(0.15625rem + 2px);
-  left: calc(-2.25rem + 2px);
+  top: calc(0.15625rem + 4px);
+  left: calc(-2.25rem + 4px);
   width: calc(1rem - 8px);
   height: calc(1rem - 8px);
   background-color: #adb5bd;
@@ -4027,16 +4026,16 @@ input[type="button"].btn-block {
 .custom-select {
   display: inline-block;
   width: 100%;
-  height: calc(1.2em + 0.75rem + 2px);
+  height: calc(1.5em + 0.75rem + 4px);
   padding: 0.375rem 1.75rem 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.5;
   color: #495057;
   vertical-align: middle;
   background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px;
   background-color: #FFF;
-  border: 1px solid #ced4da;
+  border: 2px solid #ced4da;
   border-radius: 0.25rem;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -4044,7 +4043,7 @@ input[type="button"].btn-block {
 }
 
 .custom-select:focus {
-  border-color: #1C8060;
+  border-color: #009688;
   outline: 0;
   -webkit-box-shadow: 0 0 0 0 rgba(0, 150, 136, 0.25);
           box-shadow: 0 0 0 0 rgba(0, 150, 136, 0.25);
@@ -4071,7 +4070,7 @@ input[type="button"].btn-block {
 }
 
 .custom-select-sm {
-  height: calc(1.2em + 0.5rem + 2px);
+  height: calc(1.5em + 0.5rem + 4px);
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   padding-left: 0.5rem;
@@ -4079,7 +4078,7 @@ input[type="button"].btn-block {
 }
 
 .custom-select-lg {
-  height: calc(1.2em + 1rem + 2px);
+  height: calc(1.5em + 1rem + 4px);
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
@@ -4090,7 +4089,7 @@ input[type="button"].btn-block {
   position: relative;
   display: inline-block;
   width: 100%;
-  height: calc(1.2em + 0.75rem + 2px);
+  height: calc(1.5em + 0.75rem + 4px);
   margin-bottom: 0;
 }
 
@@ -4098,13 +4097,13 @@ input[type="button"].btn-block {
   position: relative;
   z-index: 2;
   width: 100%;
-  height: calc(1.2em + 0.75rem + 2px);
+  height: calc(1.5em + 0.75rem + 4px);
   margin: 0;
   opacity: 0;
 }
 
 .custom-file-input:focus ~ .custom-file-label {
-  border-color: #1C8060;
+  border-color: #009688;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -4114,7 +4113,7 @@ input[type="button"].btn-block {
 }
 
 .custom-file-input:lang(en) ~ .custom-file-label::after {
-  content: "Buscar";
+  content: "Browse";
 }
 
 .custom-file-input ~ .custom-file-label[data-browse]::after {
@@ -4127,14 +4126,14 @@ input[type="button"].btn-block {
   right: 0;
   left: 0;
   z-index: 1;
-  height: calc(1.2em + 0.75rem + 2px);
-  padding: 0.25rem 0.75rem;
+  height: calc(1.5em + 0.75rem + 4px);
+  padding: 0.375rem 0.75rem;
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.5;
   color: #495057;
   background-color: #FFF;
-  border: 1px solid #ced4da;
-  border-radius: 2px;
+  border: 2px solid #ced4da;
+  border-radius: 4px;
 }
 
 .custom-file-label::after {
@@ -4144,14 +4143,14 @@ input[type="button"].btn-block {
   bottom: 0;
   z-index: 3;
   display: block;
-  height: calc(1.2em + 0.75rem);
-  padding: 0.25rem 0.75rem;
-  line-height: 1;
+  height: calc(1.5em + 0.75rem);
+  padding: 0.375rem 0.75rem;
+  line-height: 1.5;
   color: #495057;
-  content: "Buscar";
+  content: "Browse";
   background-color: #e9ecef;
   border-left: inherit;
-  border-radius: 0 2px 2px 0;
+  border-radius: 0 4px 4px 0;
 }
 
 .custom-range {
@@ -4189,7 +4188,7 @@ input[type="button"].btn-block {
   width: 1rem;
   height: 1rem;
   margin-top: -0.25rem;
-  background-color: #1C8060;
+  background-color: #009688;
   border: 0;
   border-radius: 1rem;
   -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
@@ -4226,7 +4225,7 @@ input[type="button"].btn-block {
 .custom-range::-moz-range-thumb {
   width: 1rem;
   height: 1rem;
-  background-color: #1C8060;
+  background-color: #009688;
   border: 0;
   border-radius: 1rem;
   -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
@@ -4266,7 +4265,7 @@ input[type="button"].btn-block {
   margin-top: 0;
   margin-right: 0;
   margin-left: 0;
-  background-color: #1C8060;
+  background-color: #009688;
   border: 0;
   border-radius: 1rem;
   -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
@@ -4420,7 +4419,7 @@ input[type="button"].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #FFF;
-  background-color: #1C8060;
+  background-color: #009688;
 }
 
 .nav-fill .nav-item {
@@ -5213,7 +5212,7 @@ input[type="button"].btn-block {
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: #1C8060;
+  color: #009688;
   background-color: #FFF;
   border: 1px solid #dee2e6;
 }
@@ -5247,8 +5246,8 @@ input[type="button"].btn-block {
 .page-item.active .page-link {
   z-index: 1;
   color: #FFF;
-  background-color: #1C8060;
-  border-color: #1C8060;
+  background-color: #009688;
+  border-color: #009688;
 }
 
 .page-item.disabled .page-link {
@@ -5262,7 +5261,7 @@ input[type="button"].btn-block {
 .pagination-lg .page-link {
   padding: 0.75rem 1.5rem;
   font-size: 1.09375rem;
-  line-height: 1;
+  line-height: 1.5;
 }
 
 .pagination-lg .page-item:first-child .page-link {
@@ -5278,7 +5277,7 @@ input[type="button"].btn-block {
 .pagination-sm .page-link {
   padding: 0.25rem 0.5rem;
   font-size: 0.765625rem;
-  line-height: 1;
+  line-height: 1.5;
 }
 
 .pagination-sm .page-item:first-child .page-link {
@@ -5337,7 +5336,7 @@ a.badge:hover, a.badge:focus {
 
 .badge-primary {
   color: #FFF;
-  background-color: #1C8060;
+  background-color: #009688;
 }
 
 a.badge-primary:hover, a.badge-primary:focus {
@@ -5665,7 +5664,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   color: #FFF;
   text-align: center;
   white-space: nowrap;
-  background-color: #1C8060;
+  background-color: #009688;
   -webkit-transition: width 0.6s ease;
   -o-transition: width 0.6s ease;
   transition: width 0.6s ease;
@@ -5771,8 +5770,8 @@ a.badge-dark:focus, a.badge-dark.focus {
 .list-group-item.active {
   z-index: 2;
   color: #FFF;
-  background-color: #1C8060;
-  border-color: #1C8060;
+  background-color: #009688;
+  border-color: #009688;
 }
 
 .list-group-horizontal {
@@ -6294,7 +6293,7 @@ a.close.disabled {
 
 .modal-title {
   margin-bottom: 0;
-  line-height: 1;
+  line-height: 1.5;
 }
 
 .modal-body {
@@ -6380,7 +6379,7 @@ a.close.disabled {
   font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.5;
   text-align: left;
   text-align: start;
   text-decoration: none;
@@ -6493,7 +6492,7 @@ a.close.disabled {
   font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.5;
   text-align: left;
   text-align: start;
   text-decoration: none;
@@ -6967,7 +6966,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #1C8060 !important;
+  background-color: #009688 !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -7095,7 +7094,7 @@ button.bg-dark:focus {
 }
 
 .border-primary {
-  border-color: #1C8060 !important;
+  border-color: #009688 !important;
 }
 
 .border-secondary {
@@ -10425,7 +10424,7 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #1C8060 !important;
+  color: #009688 !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
@@ -10858,7 +10857,7 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
  * Licensed under the Apache License v2.0 (http://www.apache.org/licenses/LICENSE-2.0)
  */
 .datepicker {
-  border-radius: 2px;
+  border-radius: 4px;
   direction: ltr;
 }
 
@@ -10877,7 +10876,7 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
 .datepicker-dropdown {
   top: 0;
   left: 0;
-  padding: 2px;
+  padding: 4px;
 }
 
 .datepicker-dropdown:before {
@@ -10951,7 +10950,7 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
   text-align: center;
   width: 30px;
   height: 30px;
-  border-radius: 2px;
+  border-radius: 4px;
   border: none;
 }
 
@@ -11433,15 +11432,15 @@ fieldset[disabled] .datepicker table tr td.selected.highlighted.focus {
 .datepicker table tr td.active.focus,
 .datepicker table tr td.active.highlighted.focus {
   color: #ffffff;
-  background-color: #1C8060;
+  background-color: #009688;
   border-color: #193c5a;
 }
 
 .datepicker table tr td.active:hover,
 .datepicker table tr td.active.highlighted:hover {
   color: #ffffff;
-  background-color: #1C8060;
-  border-color: #104a38;
+  background-color: #009688;
+  border-color: #007d71;
 }
 
 .datepicker table tr td.active:active,
@@ -11451,8 +11450,8 @@ fieldset[disabled] .datepicker table tr td.selected.highlighted.focus {
 .open > .dropdown-toggle.datepicker table tr td.active,
 .open > .dropdown-toggle.datepicker table tr td.active.highlighted {
   color: #ffffff;
-  background-color: #1C8060;
-  border-color: #104a38;
+  background-color: #009688;
+  border-color: #007d71;
 }
 
 .datepicker table tr td.active:active:hover,
@@ -11474,7 +11473,7 @@ fieldset[disabled] .datepicker table tr td.selected.highlighted.focus {
 .open > .dropdown-toggle.datepicker table tr td.active.focus,
 .open > .dropdown-toggle.datepicker table tr td.active.highlighted.focus {
   color: #ffffff;
-  background-color: #104a38;
+  background-color: #007d71;
   border-color: #193c5a;
 }
 
@@ -11517,7 +11516,7 @@ fieldset[disabled] .datepicker table tr td.active.highlighted.focus {
   float: left;
   margin: 1%;
   cursor: pointer;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 .datepicker table tr td span:hover {
@@ -11550,7 +11549,7 @@ fieldset[disabled] .datepicker table tr td.active.highlighted.focus {
 .datepicker table tr td span.active.disabled.focus,
 .datepicker table tr td span.active.disabled:hover.focus {
   color: #ffffff;
-  background-color: #1C8060;
+  background-color: #009688;
   border-color: #193c5a;
 }
 
@@ -11559,8 +11558,8 @@ fieldset[disabled] .datepicker table tr td.active.highlighted.focus {
 .datepicker table tr td span.active.disabled:hover,
 .datepicker table tr td span.active.disabled:hover:hover {
   color: #ffffff;
-  background-color: #1C8060;
-  border-color: #104a38;
+  background-color: #009688;
+  border-color: #007d71;
 }
 
 .datepicker table tr td span.active:active,
@@ -11576,8 +11575,8 @@ fieldset[disabled] .datepicker table tr td.active.highlighted.focus {
 .open > .dropdown-toggle.datepicker table tr td span.active.disabled,
 .open > .dropdown-toggle.datepicker table tr td span.active.disabled:hover {
   color: #ffffff;
-  background-color: #1C8060;
-  border-color: #104a38;
+  background-color: #009688;
+  border-color: #007d71;
 }
 
 .datepicker table tr td span.active:active:hover,
@@ -11617,7 +11616,7 @@ fieldset[disabled] .datepicker table tr td.active.highlighted.focus {
 .open > .dropdown-toggle.datepicker table tr td span.active.disabled.focus,
 .open > .dropdown-toggle.datepicker table tr td span.active.disabled:hover.focus {
   color: #ffffff;
-  background-color: #104a38;
+  background-color: #007d71;
   border-color: #193c5a;
 }
 
@@ -11952,7 +11951,7 @@ body.stop-scrolling {
   margin-bottom: 17px;
   background-color: #fff;
   background-image: none;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
   border-radius: 3px;
   -webkit-transition: border-color ease-in-out 0.15s;
   -o-transition: border-color ease-in-out 0.15s;
@@ -11960,7 +11959,7 @@ body.stop-scrolling {
 }
 
 .sweet-alert input:focus {
-  border-color: #1C8060;
+  border-color: #009688;
   outline: none;
 }
 
@@ -11984,7 +11983,7 @@ body.stop-scrolling {
 }
 
 .sweet-alert button {
-  background-color: #1C8060 !important;
+  background-color: #009688 !important;
   color: white;
   border: none;
   -webkit-box-shadow: none;
@@ -12789,7 +12788,7 @@ body.stop-scrolling {
           box-sizing: border-box;
   cursor: pointer;
   display: block;
-  /*height: 35px;*/
+  height: 35px;
   -moz-user-select: none;
    -ms-user-select: none;
        user-select: none;
@@ -12856,8 +12855,8 @@ body.stop-scrolling {
 
 .select2-dropdown {
   background-color: white;
-  border: 1px solid #ced4da;
-  border-radius: 2px;
+  border: 2px solid #ced4da;
+  border-radius: 4px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: block;
@@ -12956,8 +12955,8 @@ body.stop-scrolling {
 
 .select2-container--default .select2-selection--single {
   background-color: #fff;
-  border: 1px solid #ced4da;
-  border-radius: 2px;
+  border: 2px solid #ced4da;
+  border-radius: 4px;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
@@ -13021,8 +13020,8 @@ body.stop-scrolling {
 
 .select2-container--default .select2-selection--multiple {
   background-color: white;
-  border: 1px solid #ced4da;
-  border-radius: 2px;
+  border: 2px solid #ced4da;
+  border-radius: 4px;
   cursor: text;
 }
 
@@ -13097,7 +13096,7 @@ body.stop-scrolling {
 }
 
 .select2-container--default.select2-container--focus .select2-selection--multiple {
-  border-color: #1C8060;
+  border-color: #009688;
   outline: 0;
 }
 
@@ -13184,7 +13183,7 @@ body.stop-scrolling {
 }
 
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
-  background-color: #1C8060;
+  background-color: #009688;
   color: white;
 }
 
@@ -13518,7 +13517,7 @@ NOTE: use percentage font sizes or else old IE chokes
 
 .fc-state-down,
 .fc-state-active {
-  background-color: #1C8060;
+  background-color: #009688;
   color: #FFF;
   background-image: none;
   -webkit-box-shadow: none;
@@ -13791,8 +13790,8 @@ temporary rendered events).
   padding: 5px;
   line-height: 1.3;
   border-radius: 3px;
-  border: 1px solid #1C8060;
-  background-color: #1C8060;
+  border: 1px solid #009688;
+  background-color: #009688;
   font-weight: normal;
   /* undo jqui's ui-widget-header bold */
   margin-bottom: 5px;
@@ -14538,7 +14537,7 @@ be a descendant of the grid when it is being dragged.
 
 .dropzone {
   min-height: 150px;
-  border: 1px dashed rgba(0, 0, 0, 0.3);
+  border: 2px dashed rgba(0, 0, 0, 0.3);
   background: white;
   padding: 20px 20px;
 }
@@ -14923,7 +14922,7 @@ be a descendant of the grid when it is being dragged.
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #1C8060;
+  background-color: #009688;
   z-index: 1030;
   padding-right: 15px;
 }
@@ -14946,8 +14945,7 @@ be a descendant of the grid when it is being dragged.
           flex: 1 0 auto;
   color: #fff;
   text-align: center;
- /* font-family: 'Niconne'; */
- font-family: 'Varela Round', sans-serif;
+  font-family: 'Niconne';
   padding: 0 15px;
   font-size: 26px;
   font-weight: 400;
@@ -14961,7 +14959,7 @@ be a descendant of the grid when it is being dragged.
             flex: 0 0 auto;
     display: block;
     width: 230px;
-    background-color: #104a38;
+    background-color: #007d71;
   }
 }
 
@@ -15165,12 +15163,9 @@ be a descendant of the grid when it is being dragged.
   background-color: #222d32;
   -webkit-box-shadow: 0px 8px 17px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 17px rgba(0, 0, 0, 0.2);
-  -webkit-transition: left 0.3s ease,
- width 0.3s ease;
-  -o-transition: left 0.3s ease,
- width 0.3s ease;
-  transition: left 0.3s ease,
- width 0.3s ease;
+  -webkit-transition: left 0.3s ease, width 0.3s ease;
+  -o-transition: left 0.3s ease, width 0.3s ease;
+  transition: left 0.3s ease, width 0.3s ease;
 }
 
 .app-sidebar::-webkit-scrollbar {
@@ -15218,17 +15213,13 @@ be a descendant of the grid when it is being dragged.
 }
 
 .app-sidebar__user-name {
-  font-size: 13px;
+  font-size: 17px;
   line-height: 1.3;
-}
-
-.app-sidebar__user-designation {
-  font-size: 12px;
 }
 
 .app-sidebar__user-name,
 .app-sidebar__user-designation {
-  /*white-space: nowrap; */
+  white-space: nowrap;
   overflow: hidden;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
@@ -15251,18 +15242,15 @@ be a descendant of the grid when it is being dragged.
   padding: 12px 15px;
   font-size: 1.08em;
   border-left: 3px solid transparent;
-  -webkit-transition: border-left-color 0.3s ease,
- background-color 0.3s ease;
-  -o-transition: border-left-color 0.3s ease,
- background-color 0.3s ease;
-  transition: border-left-color 0.3s ease,
- background-color 0.3s ease;
+  -webkit-transition: border-left-color 0.3s ease, background-color 0.3s ease;
+  -o-transition: border-left-color 0.3s ease, background-color 0.3s ease;
+  transition: border-left-color 0.3s ease, background-color 0.3s ease;
   color: #fff;
 }
 
 .app-menu__item.active, .app-menu__item:hover, .app-menu__item:focus {
   background: #0d1214;
-  border-left-color: #1C8060;
+  border-left-color: #009688;
   text-decoration: none;
   color: #fff;
 }
@@ -15282,7 +15270,7 @@ be a descendant of the grid when it is being dragged.
 }
 
 .treeview.is-expanded [data-toggle='treeview'] {
-  border-left-color: #1C8060;
+  border-left-color: #009688;
   background: #0d1214;
 }
 
@@ -15388,7 +15376,7 @@ be a descendant of the grid when it is being dragged.
   .sidebar-mini.sidenav-toggled .treeview:hover .app-menu__item {
     overflow: visible;
     background: #0d1214;
-    border-left-color: #1C8060;
+    border-left-color: #009688;
     color: #fff;
   }
   .sidebar-mini.sidenav-toggled .treeview:hover .app-menu__label {
@@ -15662,7 +15650,7 @@ be a descendant of the grid when it is being dragged.
 
 .animated-checkbox input[type="checkbox"]:checked + .label-text:before {
   content: "";
-  color: #1C8060;
+  color: #009688;
   -webkit-animation: tick 180ms ease-in;
           animation: tick 180ms ease-in;
 }
@@ -15707,7 +15695,7 @@ be a descendant of the grid when it is being dragged.
 
 .animated-radio-button input[type="radio"]:checked + .label-text:before {
   content: "";
-  color: #1C8060;
+  color: #009688;
   -webkit-animation: tick 180ms ease-in;
           animation: tick 180ms ease-in;
 }
@@ -15786,7 +15774,7 @@ be a descendant of the grid when it is being dragged.
 
 .toggle input[type="checkbox"]:checked + .button-indecator:before {
   content: "";
-  color: #1C8060;
+  color: #009688;
   -webkit-animation: toggleBtn 0.3s ease-in-out;
           animation: toggleBtn 0.3s ease-in-out;
 }
@@ -15840,7 +15828,7 @@ be a descendant of the grid when it is being dragged.
 
 .toggle-flip input[type="checkbox"] + .flip-indecator:after {
   content: attr(data-toggle-on);
-  background-color: #1C8060;
+  background-color: #009688;
   color: #fff;
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
@@ -15899,7 +15887,7 @@ be a descendant of the grid when it is being dragged.
 }
 
 .material-half-bg .cover {
-  background-color: #1C8060;
+  background-color: #009688;
   height: 50vh;
 }
 
@@ -15933,7 +15921,7 @@ be a descendant of the grid when it is being dragged.
 .path {
   stroke-dasharray: 1,200;
   stroke-dashoffset: 0;
-  stroke: #1C8060;
+  stroke: #009688;
   -webkit-animation: dash 1.5s ease-in-out infinite;
           animation: dash 1.5s ease-in-out infinite;
   stroke-linecap: round;
@@ -16025,7 +16013,7 @@ be a descendant of the grid when it is being dragged.
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-radius: 2px;
+  border-radius: 4px;
   color: #FFF;
   margin-bottom: 30px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
@@ -16045,7 +16033,7 @@ be a descendant of the grid when it is being dragged.
           justify-content: center;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 2px 0 0 2px;
+  border-radius: 4px 0 0 4px;
   font-size: 2.5rem;
 }
 
@@ -16072,7 +16060,7 @@ be a descendant of the grid when it is being dragged.
 }
 
 .widget-small.primary {
-  background-color: #1C8060;
+  background-color: #009688;
 }
 
 .widget-small.primary.coloured-icon {
@@ -16081,7 +16069,7 @@ be a descendant of the grid when it is being dragged.
 }
 
 .widget-small.primary.coloured-icon .icon {
-  background-color: #1C8060;
+  background-color: #009688;
   color: #fff;
 }
 
@@ -16171,7 +16159,7 @@ be a descendant of the grid when it is being dragged.
 }
 
 .messanger .messages .message.me .info {
-  background-color: #1C8060;
+  background-color: #009688;
   color: #FFF;
 }
 
@@ -16188,7 +16176,7 @@ be a descendant of the grid when it is being dragged.
   height: 0;
   border-style: solid;
   border-width: 0 16px 16px 0;
-  border-color: transparent #1C8060 transparent transparent;
+  border-color: transparent #009688 transparent transparent;
   -webkit-transform: rotate(270deg);
       -ms-transform: rotate(270deg);
           transform: rotate(270deg);
@@ -16231,7 +16219,7 @@ be a descendant of the grid when it is being dragged.
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  border: 1px solid #1C8060;
+  border: 1px solid #009688;
   outline: none;
   padding: 5px 10px;
 }
@@ -16326,7 +16314,7 @@ be a descendant of the grid when it is being dragged.
 }
 
 .features-card {
-  border-radius: 2px;
+  border-radius: 4px;
   padding: 10px;
   font-size: 1.143em;
   text-align: center;
@@ -16338,7 +16326,7 @@ be a descendant of the grid when it is being dragged.
   margin: 0 auto 8px;
   padding: 15px;
   border-radius: 50%;
-  background-color: #1C8060;
+  background-color: #009688;
 }
 
 .feature-icon {
@@ -16386,9 +16374,8 @@ be a descendant of the grid when it is being dragged.
 }
 
 .login-content .logo {
-  margin-bottom: 40px; 
- /* font-family: "Niconne";*/
- font-family: 'Varela Round', sans-serif;
+  margin-bottom: 40px;
+  font-family: "Niconne";
   color: #fff;
 }
 
@@ -16504,8 +16491,7 @@ be a descendant of the grid when it is being dragged.
 }
 
 .lockscreen-content .logo {
-/*  font-family: "Niconne"; */
-font-family: 'Varela Round', sans-serif;
+  font-family: "Niconne";
   margin-bottom: 40px;
   color: #fff;
 }
@@ -16661,7 +16647,7 @@ font-family: 'Varela Round', sans-serif;
 }
 
 .user .user-tabs .nav-link.active {
-  border-left-color: #1C8060;
+  border-left-color: #009688;
   border-bottom: 0;
 }
 

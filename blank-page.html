@@ -22,9 +22,9 @@
     <!-- Font-icon css-->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-  <body class="app sidebar-mini rtl">
+  <body class="app sidebar-mini">
     <!-- Navbar-->
-    <header class="app-header"><a class="app-header__logo" href="index.html">SIGEPAD</a>
+    <header class="app-header"><a class="app-header__logo" href="index.html">Vali</a>
       <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
       <!-- Navbar Right Menu-->
       <ul class="app-nav">
@@ -77,8 +77,8 @@
         <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-user fa-lg"></i></a>
           <ul class="dropdown-menu settings-menu dropdown-menu-right">
             <li><a class="dropdown-item" href="page-user.html"><i class="fa fa-cog fa-lg"></i> Settings</a></li>
-            <li><a class="dropdown-item" href="page-user.html"><i class="fa fa-user fa-lg"></i> Perfil</a></li>
-            <li><a class="dropdown-item" href="page-login.html"><i class="fa fa-sign-out fa-lg"></i> Cerrar sesion</a></li>
+            <li><a class="dropdown-item" href="page-user.html"><i class="fa fa-user fa-lg"></i> Profile</a></li>
+            <li><a class="dropdown-item" href="page-login.html"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
           </ul>
         </li>
       </ul>
@@ -86,24 +86,15 @@
     <!-- Sidebar menu-->
     <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
     <aside class="app-sidebar">
-		<div class="text-center">
-		<img class="app-sidebar__user-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg" alt="User Image">
-      </div>
-      <div class="app-sidebar__user">
-		<div style="width: 100%" class="text-center">
-		  <p class="app-sidebar__user-name font-weight-bold">CAPITAN S</p>
-	      <p class="app-sidebar__user-name">LLAMPAZO LUIS RICARDO</p>
-		  <p class="app-sidebar__user-name font-weight-bold">INSTRUCTOR</p>
-			<p class="app-sidebar__user-designation font-weight-bold">OD - 15</p>
-			<p class="app-sidebar__user-designation font-weight-bold">(SEDE TRANSITO)</p>
-		  
+      <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg" alt="User Image">
+        <div>
+          <p class="app-sidebar__user-name">John Doe</p>
+          <p class="app-sidebar__user-designation">Frontend Developer</p>
         </div>
       </div>
       <ul class="app-menu">
-        <li><a class="app-menu__item" href="index.html"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Resumen</span></a></li>
-		  <li><a class="app-menu__item" href="charts.html"><i class="app-menu__icon fa fa-pencil-square-o"></i><span class="app-menu__label">Denuncia</span></a></li>
-		  <li><a class="app-menu__item" href="charts.html"><i class="app-menu__icon fa fa-laptop"></i><span class="app-menu__label">Tramite Documentario</span></a></li>
-        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-laptop"></i><span class="app-menu__label">Tramite Documentario</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+        <li><a class="app-menu__item" href="dashboard.html"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Dashboard</span></a></li>
+        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-laptop"></i><span class="app-menu__label">UI Elements</span><i class="treeview-indicator fa fa-angle-right"></i></a>
           <ul class="treeview-menu">
             <li><a class="treeview-item" href="bootstrap-components.html"><i class="icon fa fa-circle-o"></i> Bootstrap Elements</a></li>
             <li><a class="treeview-item" href="https://fontawesome.com/v4.7.0/icons/" target="_blank" rel="noopener"><i class="icon fa fa-circle-o"></i> Font Icons</a></li>
@@ -138,6 +129,7 @@
             <li><a class="treeview-item" href="page-error.html"><i class="icon fa fa-circle-o"></i> Error Page</a></li>
           </ul>
         </li>
+        <li><a class="app-menu__item" href="docs.html"><i class="app-menu__icon fa fa-file-code-o"></i><span class="app-menu__label">Docs</span></a></li>
       </ul>
     </aside>
     <main class="app-content">
@@ -148,72 +140,19 @@
         </div>
         <ul class="app-breadcrumb breadcrumb">
           <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
-          <li class="breadcrumb-item"><a href="#">Denuncia</a></li>
-			<li class="breadcrumb-item">Nueva Denuncia</li>
+          <li class="breadcrumb-item"><a href="#">Blank Page</a></li>
         </ul>
       </div>
       <div class="row">
         <div class="col-md-12">
           <div class="tile">
-          <div class="card mb-4">
-				<form id="form-denuncia" th:action="@{/denuncias/regular}" method="post">
-					<div class="card-body">
-						<div class="row">
-						<div class="col-md-3">
-							<label>Estado</label>
-							<select id="estado" name="estado" class="form-control">
-								<option value="1">REGISTRADOS</option>
-								<option value="2">ATENDIDOS</option>
-								<option value="3">TODOS</option>
-							</select>
-						</div>
-						<div class="col-md-2">
-					<label>Desde</label>
-					<div class="input-group" id="fechaDesdeGroup">
-						<input type="text" class="form-control date" id="fechadesde" name="fechadesde" required>
-						<span class="input-group-append input-group-addon">
-							<span class="input-group-text">
-								<i class="fa fa-calendar"></i>
-							</span>
-						</span>
-					</div>
-							</div>
-							
-				<div class="col-md-2">
-					<label>Hasta</label>
-					
-					<div class="input-group" id="fechaHastaGroup">
-						<input type="text" class="form-control date" id="fechahasta" name="fechahasta" required>
-						<span class="input-group-append input-group-addon">
-							<span class="input-group-text">
-								<i class="fa fa-calendar"></i>
-							</span>
-						</span>
-					</div>
-							</div>
-							<div class="col-md-3">
-							  <label>Denunciado</label>
-							  <input class="form-control text-uppercase" id="" name="denunciado" placeholder="DENUNCIADO"/>
-						</div>
-							<div class="col-md-2">
-							<label class="text-white">.</label>
-							<button type="button" id="buscadenuncia" class="btn btn-primary form-control"><i class="fa fa-search"></i>Buscar</button>
-						</div>
-					</div>
-						<div class="table-responsive">
-							<table class="table">
-							</table>
-						</div>
-						
-					</div>
-					</form>
-				</div>
+            <div class="tile-body">Create a beautiful dashboard</div>
           </div>
         </div>
       </div>
     </main>
     <!-- Essential javascripts for application to work-->
-    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>

@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
+    <!-- Twitter meta-->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:site" content="@pratikborsadiya">
+    <meta property="twitter:creator" content="@pratikborsadiya">
+    <!-- Open Graph Meta-->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Vali Admin">
+    <meta property="og:title" content="Vali - Free Bootstrap 4 admin theme">
+    <meta property="og:url" content="http://pratikborsadiya.in/blog/vali-admin">
+    <meta property="og:image" content="http://pratikborsadiya.in/blog/vali-admin/hero-social.png">
+    <meta property="og:description" content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
+    <title>Blank Page - Vali Admin</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Main CSS-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/icofont.min.css">
+    <!-- Font-icon css-->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body class="app sidebar-mini rtl">
+    <!-- Navbar-->
+    <header class="app-header"><a class="app-header__logo" href="index.html">SIGEPAD</a>
+      <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+      <!-- Navbar Right Menu-->
+      <ul class="app-nav">
+        <li class="app-search">
+          <input class="app-search__input" type="search" placeholder="Search">
+          <button class="app-search__button"><i class="fa fa-search"></i></button>
+        </li>
+        <!--Notification Menu-->
+        <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Show notifications"><i class="fa fa-bell-o fa-lg"></i></a>
+          <ul class="app-notification dropdown-menu dropdown-menu-right">
+            <li class="app-notification__title">You have 4 new notifications.</li>
+            <div class="app-notification__content">
+              <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></span>
+                  <div>
+                    <p class="app-notification__message">Lisa sent you a mail</p>
+                    <p class="app-notification__meta">2 min ago</p>
+                  </div></a></li>
+              <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-danger"></i><i class="fa fa-hdd-o fa-stack-1x fa-inverse"></i></span></span>
+                  <div>
+                    <p class="app-notification__message">Mail server not working</p>
+                    <p class="app-notification__meta">5 min ago</p>
+                  </div></a></li>
+              <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-success"></i><i class="fa fa-money fa-stack-1x fa-inverse"></i></span></span>
+                  <div>
+                    <p class="app-notification__message">Transaction complete</p>
+                    <p class="app-notification__meta">2 days ago</p>
+                  </div></a></li>
+              <div class="app-notification__content">
+                <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></span>
+                    <div>
+                      <p class="app-notification__message">Lisa sent you a mail</p>
+                      <p class="app-notification__meta">2 min ago</p>
+                    </div></a></li>
+                <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-danger"></i><i class="fa fa-hdd-o fa-stack-1x fa-inverse"></i></span></span>
+                    <div>
+                      <p class="app-notification__message">Mail server not working</p>
+                      <p class="app-notification__meta">5 min ago</p>
+                    </div></a></li>
+                <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-success"></i><i class="fa fa-money fa-stack-1x fa-inverse"></i></span></span>
+                    <div>
+                      <p class="app-notification__message">Transaction complete</p>
+                      <p class="app-notification__meta">2 days ago</p>
+                    </div></a></li>
+              </div>
+            </div>
+            <li class="app-notification__footer"><a href="#">See all notifications.</a></li>
+          </ul>
+        </li>
+        <!-- User Menu-->
+        <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-user fa-lg"></i></a>
+          <ul class="dropdown-menu settings-menu dropdown-menu-right">
+            <li><a class="dropdown-item" href="page-user.html"><i class="fa fa-cog fa-lg"></i> Settings</a></li>
+            <li><a class="dropdown-item" href="page-user.html"><i class="fa fa-user fa-lg"></i> Perfil</a></li>
+            <li><a class="dropdown-item" href="page-login.html"><i class="fa fa-sign-out fa-lg"></i> Cerrar sesion</a></li>
+          </ul>
+        </li>
+      </ul>
+    </header>
+    <!-- Sidebar menu-->
+    <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+    <aside class="app-sidebar">
+		<div class="text-center">
+		<img class="app-sidebar__user-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg" alt="User Image">
+      </div>
+      <div class="app-sidebar__user">
+		<div style="width: 100%" class="text-center">
+		  <p class="app-sidebar__user-name font-weight-bold">CAPITAN S</p>
+	      <p class="app-sidebar__user-name">LLAMPAZO LUIS RICARDO</p>
+		  <p class="app-sidebar__user-name font-weight-bold">INSTRUCTOR</p>
+			<p class="app-sidebar__user-designation font-weight-bold">OD - 15</p>
+			<p class="app-sidebar__user-designation font-weight-bold">(SEDE TRANSITO)</p>
+		  
+        </div>
+      </div>
+      <ul class="app-menu">
+        <li><a class="app-menu__item" href="index.html"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Resumen</span></a></li>
+        <li><a class="app-menu__item" href="charts.html"><em class="app-menu__icon icofont-police"></em><span class="app-menu__label">OD Turno</span></a></li>
+        <li><a class="app-menu__item" href="charts.html"><i class="app-menu__icon fa fa-files-o"></i><span class="app-menu__label">Tramite Documentario</span></a></li>
+		  <li><a class="app-menu__item" href="charts.html"><i class="app-menu__icon icofont-businessman"></i><span class="app-menu__label">Monitoreo Expedientes</span></a></li>
+		  <li><a class="app-menu__item" href="charts.html"><em class="app-menu__icon icofont-businessman"></em><span class="app-menu__label">Secretaría OD</span></a></li>
+		  <li><a class="app-menu__item" href="charts.html"><i class="app-menu__icon icofont-police-cap"></i><span class="app-menu__label">CEOPOL IGPNP</span></a></li>
+        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon icofont-investigator"></i><span class="app-menu__label">Procesos AD</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+          <ul class="treeview-menu">
+            <li><a class="treeview-item" href="bootstrap-components.html"><i class="icon fa fa-circle-o"></i> Investigaciones</a></li>
+            <li><a class="treeview-item" href="https://fontawesome.com/v4.7.0/icons/" target="_blank" rel="noopener"><i class="icon fa fa-circle-o"></i> Expedientes</a></li>
+            
+          </ul>
+        </li>
+        <li></li>
+        <li class="treeview">
+<ul class="treeview-menu">
+        <li><a class="treeview-item" href="form-components.html"><i class="icon fa fa-circle-o"></i> Form Components</a></li>
+            <li><a class="treeview-item" href="../form-custom.html"><i class="icon fa fa-circle-o"></i> Custom Components</a></li>
+            <li><a class="treeview-item" href="form-samples.html"><i class="icon fa fa-circle-o"></i> Form Samples</a></li>
+            <li><a class="treeview-item" href="form-notifications.html"><i class="icon fa fa-circle-o"></i> Form Notifications</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+<ul class="treeview-menu">
+        <li><a class="treeview-item" href="table-basic.html"><i class="icon fa fa-circle-o"></i> Basic Tables</a></li>
+            <li><a class="treeview-item" href="table-data-table.html"><i class="icon fa fa-circle-o"></i> Data Tables</a></li>
+          </ul>
+        </li>
+        
+      </ul>
+    </aside>
+    <main class="app-content">
+      <div class="app-title">
+        <div>
+          <h1><em class="icofont-investigation"></em> Gestión de Investigación</h1>
+          <p>Agregar nuevos administrados / Asignar medidas preventivas</p>
+        </div>
+        <ul class="app-breadcrumb breadcrumb">
+          <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
+          <li class="breadcrumb-item"><a href="#">OD Turno</a></li>
+			<li class="breadcrumb-item">Expediente</li>
+        </ul>
+      </div>
+      <div class="container-fluid">
+          <div class="tile">
+			  <div class="tile-title-w-btn line-head">
+			    <h4>DOCUMENTACIÓN</h4>
+			    <div>
+				  <button class="btn btn-primary"><em class="fa fa-file"></em> Agregar Administrados</button>
+						<button id="btnmedprev" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseMedida" aria-expanded="false" aria-controls="collapseMedida"><em class="fa fa-folder-o"></em> Medida Preventiva </button>
+					<button id="btnaddprev" class="btn btn-primary" type="button" style="display: none;"><em class="fa fa-file-text"></em> </button>
+				  </div>
+			  </div>
+            <div class="tile-body">
+				<div class="container-fluid">
+					<div class="row mb-3 collapse" id="collapseMedida">
+					<div class="col-12 table-responsive">
+						<table id="tablamedidas" class="table table-bordered table-striped table-sm">
+							<thead>
+								<tr>
+									<th class="text-center"><em class="fa fa-file-pdf-o"></em></th>
+									<th class="text-center">N° de Resolución</th>
+									<th class="text-center">Fecha de Documento</th>
+								  <th class="text-center">Tipo Documento</th>
+									<th><i class="fa fa-pencil-square-o"></i></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+								  <td><button class="btn btn-info btn-sm" data-toggle="tooltip" title="Ver Documento"><i class="fa fa-file-pdf-o m-0"></i></button></td>
+								  <td>RD-001-2020-IGPNP</td>
+								  <td>07/03/2020</td>
+								  <td>INICIO MEDIDA PREVENTIVA</td>
+									<td>
+									  <button class="btn btn-primary btn-sm medprevModal" data-toggle="tooltip" title="Modificar">
+											<i class="fa fa-pencil m-0"></i></button>
+									  <button class="btn btn-warning btn-sm medprevModal" data-toggle="tooltip" title="Guardar">
+											<i class="fa fa-unlock-alt m-0"></i></button>
+										<button class="btn btn-danger btn-sm medprevModal" data-toggle="tooltip" title="Eliminar">
+											<i class="fa fa-trash m-0"></i></button>
+								  </td>
+								</tr>
+								<tr>
+								  <td class="text-center align-middle"><button class="btn btn-info btn-sm" data-toggle="tooltip" title="Ver Documento"><i class="fa fa-file-pdf-o m-0"></i></button></td>
+								  <td>RD-001-2020-IGPNP</td>
+								  <td>07/03/2020</td>
+								  <td>FIN MEDIDA PREVENTIVA</td>
+									<td>
+										<button class="btn btn-primary btn-sm medprevModal" data-toggle="tooltip" title="Modificar">
+											<i class="fa fa-pencil m-0"></i></button>
+										<button class="btn btn-warning btn-sm medprevModal" data-toggle="tooltip" title="Guardar">
+											<i class="fa fa-unlock-alt m-0"></i></button>
+										<button class="btn btn-danger btn-sm medprevModal" data-toggle="tooltip" title="Eliminar">
+											<i class="fa fa-trash m-0"></i></button>
+								  </td>
+								</tr>
+							  <tr>
+								  <td class="text-center align-middle"><button class="btn btn-info btn-sm" data-toggle="tooltip" title="Ver Documento"><i class="fa fa-file-pdf-o m-0"></i></button></td>
+								  <td>RD-001-2020-IGPNP</td>
+								  <td>07/03/2020</td>
+								  <td>VARIACION MEDIDA PREVENTIVA</td>
+									<td class="text-center">
+										<button class="btn btn-info btn-sm medprevModal" data-toggle="tooltip" title="Administrados">
+											<span>2</span> <i class="fa fa-user m-0"></i></button>
+							    </td>
+									
+									
+							  </tr>
+								
+								
+							  
+							</tbody>
+						</table>
+						</div>
+				  	
+					
+				</div>
+					
+					<div class="row">
+					<div class="col-12 table-responsive">
+						<table id="tablaadministrados" class="table table-bordered table-striped table-sm">
+							<thead>
+								<tr>
+									<th class="text-center"><i class="fa fa-folder-open"></i></th>
+									<th class="text-center"> Fase</th>
+									<th class="text-center">Tipo de Documento</th>
+									
+								  <th class="text-center">Nro Documento</th>
+									<th class="text-center"> Motivo</th>
+								<th class="text-center">Fecha Documento</th>
+									<th class="text-center">Medida Preventiva</th>
+									
+								  
+									<th class="text-center">Enterado M/P</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+								  <td class="text-center"><button class="btn btn-info btn-sm"><em class="fa fa-folder-open-o m-0"></em></button></td>
+								  <td>Inicio PAD</td>
+								  <td>Carta</td>
+								  <td>INICIO PAD</td>
+									<td class="text-center"><a href="#">RD-001-2020-DIRINV-IGPNP</a></td>
+									<td class="text-center"><span>20/02/2020</span> <button class="btn btn-info btn-sm" data-toggle="tooltip" title="Ver notificacion"><i class="fa fa-file-pdf-o m-0"></i></button></td>
+									<td class="text-center">-</td>
+									<td class="text-center">
+										<button class="btn btn-warning btn-sm medprevModal" data-toggle="tooltip" title="Medida Preventiva">
+											<i class="fa fa-upload m-0"></i></button>
+									</td>
+								</tr>
+								<tr>
+								  <td class="text-center"><button class="btn btn-info btn-sm"><em class="fa fa-folder-open-o m-0"></em></button></td>
+								  <td>Acciones Previas</td>
+								  <td>Resolución</td>
+								  <td> 001-2020-IGPNP</td>
+									<td class="text-center">Solicitud de Información de legajo Personal</td>
+									<td class="text-center"><span>20/02/2020</span> <button class="btn btn-info btn-sm" data-toggle="tooltip" title="Ver notificacion"><i class="fa fa-file-pdf-o m-0"></i></button></td>
+									<td class="text-center"> SUSPENSION TEMPORAL DEL SERVICIO</td>
+									<td class="text-center"><span>20/02/2020</span> 
+										<button class="btn btn-danger btn-sm medprevModal" data-toggle="tooltip" title="Medida Preventiva"><i class="fa fa-file-pdf-o m-0"></i></button>
+									</td>
+								</tr>
+								<tr>
+								  <td class="text-center"><button class="btn btn-info btn-sm " data-toggle="tooltip" title="Ver Detalles"><i class="fa fa-folder-open-o m-0"></i></button></td>
+								  <td>391305</td>
+								  <td>Informe</td>
+								  <td>INICIO PAD</td>
+									
+									<td class="text-center"><a href="#">RD-001-2020-DIRINV-IGPNP</a></td>
+									<td class="text-center"><button class="btn btn-warning btn-sm"  data-toggle="tooltip" title="Cargar Notificación"><i class="fa fa-upload m-0"></i></button></td>
+									<td></td>
+									<td><button class="btn btn-danger btn-sm medprevModal" data-toggle="tooltip" title="Medida Preventiva" disabled><i class="icofont-handcuff m-0"></i></button>
+									</td>
+								</tr>
+							  
+							</tbody>
+						</table>
+						</div>
+				  	
+					
+				</div>
+					
+				</div>
+				
+		    </div>
+			  
+          </div>
+      </div>
+  </main>
+<div class="modal fade" id="medidaprevModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Medida Preventivas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		  <div class="row mb-3">
+			  <div class="col-md-5">
+				  <label>Nro Resolución</label>
+				  <div class="input-group">
+					  <input class="form-control" placeholder="####">
+					  <input class="form-control" placeholder="2020">
+					  <input class="form-control" value="IG-PNP-DIRINV-OD14" readonly>
+				  </div>
+			  </div>
+			  <div class="col-md-2">
+				  <label>Fecha</label>
+				  <input class="form-control">
+			  </div>
+			  <div class="col-md-5">
+				  <label>Archivo</label>
+				  <input class="form-control" type="file">
+			  </div>
+		  </div>
+        <div class="row">
+			<div class="col-md-12">
+				
+				
+				<div class="table-responsive">
+				<table class="table table-bordered table-striped table-sm">
+					<thead>
+						<tr>
+							<th>CIP</th>
+							<th>Apellidos y Nombres</th>
+							<th>Situacion</th>
+							<th>Accion</th>
+							<th>Medida Preventiva</th>
+							
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>391305</td>
+							<td>CAP S LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
+							<td>Inicio PAD</td>
+							<td>
+								<select class="form-control ">
+									<option>Ninguno</option>
+									<option>Imponer</option>
+									<option>Levantar</option>
+									<option>Variar</option>
+								</select>
+							</td>
+							<td>
+								<select class="form-control ">
+									<option>Ninguno</option>
+									<option>Suspension Temporal del Servicio</option>
+									<option>Separacion Temporal del Cargo</option>
+									<option>Cese Temporal del Empleo</option>
+								</select>
+							</td>
+							
+						</tr>
+						<tr>
+							<td>391305</td>
+							<td>CAP S LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
+							<td>STS</td>
+							<td>
+								<select class="form-control ">
+									<option>Ninguno</option>
+									<option>Imponer</option>
+									<option>Levantar</option>
+									<option>Variar</option>
+								</select>
+							</td>
+							<td>
+								<select class="form-control ">
+									<option>Ninguno</option>
+									<option>Suspension Temporal del Servicio</option>
+									<option>Separacion Temporal del Cargo</option>
+									<option>Cese Temporal del Empleo</option>
+								</select>
+							</td>
+							
+						</tr>
+						<tr>
+							<td>391305</td>
+							<td>CAP S LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
+							<td>STS</td>
+							<td>
+								<select class="form-control ">
+									<option>Ninguno</option>
+									<option>Imponer</option>
+									<option>Levantar</option>
+									<option>Variar</option>
+								</select>
+							</td>
+							<td>
+								<select class="form-control ">
+									<option>Ninguno</option>
+									<option>Suspension Temporal del Servicio</option>
+									<option>Separacion Temporal del Cargo</option>
+									<option>Cese Temporal del Empleo</option>
+								</select>
+							</td>
+							
+						</tr>
+					</tbody>
+				</table>
+				</div>
+				
+			</div>
+			
+		  </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
+	  
+    <!-- Essential javascripts for application to work-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- The javascript plugin to display page loading on top-->
+    <script src="js/plugins/pace.min.js"></script>
+  <script src="js/plugins/select2.full.min.js"></script>
+	  <script src="js/plugins/jquery.dataTables.min.js"></script>
+	  <script src="js/plugins/dataTables.bootstrap4.min.js"></script>
+	  
+    <!-- Page specific javascripts-->
+    <!-- Google analytics script-->
+  <script>
+		$('#selectubigeo').select2({width: '100%'});
+		$('#selectclase').select2({width: '100%'});
+	  	$('#tablaadministrados').DataTable();
+	  $('#tablamedidas').DataTable({
+        	"searching": false,
+        	"info":     false,
+		  
+        	  'columns': [{ 'orderable': false },
+		    	   null,
+		    	   null,
+		    		null,
+		    		{ 'orderable': false }
+		    	 ],
+		    	 "columnDefs": [
+		    		    { className: "text-center", "targets": [ 0,2,4 ] },
+					 	{ className: "align-middle", "targets": [ 0,1,2,3,4 ] }
+					 
+		    		  ],
+				  "order": [[ 1, "desc" ]]
+		     
+          		  });
+	  $('#btnaddprev').on('click',function(){
+		  $('#medidaprevModal').modal('show');
+	  })
+	  $('#btnmedprev').on('click',function(){
+		  if($('#collapseMedida').hasClass('show'))
+		{
+			  $('#btnmedprev .fa').addClass('fa-folder-o');
+			  $('#btnmedprev .fa').removeClass('fa-folder-open-o');
+			$('#btnaddprev').hide();
+		
+		}
+		  else{
+			  $('#btnmedprev .fa').removeClass('fa-folder-o');
+			  $('#btnmedprev .fa').addClass('fa-folder-open-o');
+			  $('#btnaddprev').show();
+		  }
+			  
+	  });
+	  </script>
+</body>
+</html>
