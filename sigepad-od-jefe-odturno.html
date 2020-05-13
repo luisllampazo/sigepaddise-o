@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
+    <!-- Twitter meta-->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:site" content="@pratikborsadiya">
+    <meta property="twitter:creator" content="@pratikborsadiya">
+    <!-- Open Graph Meta-->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Vali Admin">
+    <meta property="og:title" content="Vali - Free Bootstrap 4 admin theme">
+    <meta property="og:url" content="http://pratikborsadiya.in/blog/vali-admin">
+    <meta property="og:image" content="http://pratikborsadiya.in/blog/vali-admin/hero-social.png">
+    <meta property="og:description" content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
+    <title>Blank Page - Vali Admin</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Main CSS-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- Font-icon css-->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/daterangepicker.css">
+  </head>
+  <body class="app sidebar-mini">
+    <!-- Navbar-->
+    <header class="app-header"><a class="app-header__logo" href="index.html">SIGEPAD</a><!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+      <!-- Navbar Right Menu-->
+      <ul class="app-nav">
+        <!--Notification Menu-->
+        <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Show notifications"><i class="fa fa-bell-o fa-lg"></i></a>
+          <ul class="app-notification dropdown-menu dropdown-menu-right">
+            <li class="app-notification__title">Tienes 4 notificaciones Nuevas.</li>
+            <div class="app-notification__content">
+              <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></span>
+                  <div>
+                    <p class="app-notification__message">Lisa sent you a mail</p>
+                    <p class="app-notification__meta">2 min ago</p>
+                  </div></a></li>
+              <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-danger"></i><i class="fa fa-hdd-o fa-stack-1x fa-inverse"></i></span></span>
+                  <div>
+                    <p class="app-notification__message">Mail server not working</p>
+                    <p class="app-notification__meta">5 min ago</p>
+                  </div></a></li>
+              <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-success"></i><i class="fa fa-money fa-stack-1x fa-inverse"></i></span></span>
+                  <div>
+                    <p class="app-notification__message">Transaction complete</p>
+                    <p class="app-notification__meta">2 days ago</p>
+                  </div></a></li>
+              <div class="app-notification__content">
+                <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></span>
+                    <div>
+                      <p class="app-notification__message">Lisa sent you a mail</p>
+                      <p class="app-notification__meta">2 min ago</p>
+                    </div></a></li>
+                <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-danger"></i><i class="fa fa-hdd-o fa-stack-1x fa-inverse"></i></span></span>
+                    <div>
+                      <p class="app-notification__message">Mail server not working</p>
+                      <p class="app-notification__meta">5 min ago</p>
+                    </div></a></li>
+                <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-success"></i><i class="fa fa-money fa-stack-1x fa-inverse"></i></span></span>
+                    <div>
+                      <p class="app-notification__message">Transaction complete</p>
+                      <p class="app-notification__meta">2 days ago</p>
+                    </div></a></li>
+              </div>
+            </div>
+            <li class="app-notification__footer"><a href="#">See all notifications.</a></li>
+          </ul>
+        </li>
+        <!-- User Menu-->
+        <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-user fa-lg"></i></a>
+          <ul class="dropdown-menu settings-menu dropdown-menu-right">
+            <li><a class="dropdown-item" href="page-user.html"><i class="fa fa-cog fa-lg"></i> Configuracion</a></li>
+            <li><a class="dropdown-item" href="page-user.html"><i class="fa fa-user fa-lg"></i> Perfil</a></li>
+            <li><a class="dropdown-item" href="page-login.html"><i class="fa fa-sign-out fa-lg"></i> Salir</a></li>
+          </ul>
+        </li>
+      </ul>
+    </header>
+    <!-- Sidebar menu-->
+  <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+    <aside class="app-sidebar">
+		<div class="text-center">
+			 <img class="app-sidebar__user-avatar img-fluid m-0" src="images/default-user.jpg" alt="User Image">
+		</div>
+		<div class="app-sidebar__user">
+		<div class="text-center" style="width: 100%">
+		  <p class="app-sidebar__user-name font-weight-bold">CAPITAN S</p>
+	      <p class="app-sidebar__user-name"><small>LLAMPAZO MANDAMIENTO LUIS RICARDO</small></p>
+		  <p class="app-sidebar__user-name font-weight-bold">JEFATURA</p>
+			<p class="app-sidebar__user-designation font-weight-bold">OD - 15</p>
+			<p class="app-sidebar__user-designation font-weight-bold">(SEDE TRANSITO)</p>
+		  
+        </div>
+      </div>
+      <ul class="app-menu">
+        <li><a class="app-menu__item" href="sigepad-od-jefe-index.html"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Resumen</span></a></li>
+        <li><a class="app-menu__item active" href="sigepad-od-jefe-odturno.html"><em class="app-menu__icon fa fa-shield"></em><span class="app-menu__label">OD Turno</span></a></li>
+		<li><a class="app-menu__item" href="sigepad-od-jefe-investigaciones.html"><em class="app-menu__icon fa fa-shield"></em><span class="app-menu__label">Investigaciones AD</span></a></li>
+		<li><a class="app-menu__item" href="sigepad-od-jefe-expedientes.html"><em class="app-menu__icon fa fa-shield"></em><span class="app-menu__label">Expedientes AD</span></a></li>
+      </ul>
+    </aside>
+    <main class="app-content">
+      <div class="app-title">
+        <div>
+          <h1><em class="fa fa-dashboard"></em> Oficina de Disciplina de Turno</h1>
+          <p>Registro de denuncias, notas informativas y otras comunicaciones ingresadas</p>
+        </div>
+        <ul class="app-breadcrumb breadcrumb">
+          	<li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
+			<li class="breadcrumb-item">Oficina de Disiplina</li>
+			<li class="breadcrumb-item"><a href="#">OD Turno</a></li>
+        </ul>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="tile">
+            <h3 class="tile-title">Registro de comunicaciones de hechos de inconducta funcional</h3>
+            <div class="tile-body">
+				<div class="container-fluid">
+					<div class="row mb-3">
+						<div class="col-md-6 col-lg-2 mb-3">
+						 <label>
+							Tipo de Comunicación
+						  </label>
+						  	<select class="form-control">
+								<option>Todos</option>
+								<option>Denuncia Regular</option>
+								<option>Nota Informativa</option>
+							</select>
+					  </div>
+						<div class="col-md-6 col-lg-2 mb-3">
+						 <label>
+							Estado
+						  </label>
+						  	<select class="form-control">
+								<option>Todos</option>
+								<option>Recibido</option>
+								<option>Atendido</option>
+								<option>Archivado</option>
+								<option>Regitrado (N.I)</option>
+							</select>
+					  </div>
+						<div class="col-md-6 col-lg-2 mb-3">
+						 <label>
+							Clasificacion
+						  </label>
+						  	<select class="form-control">
+								
+							</select>
+					  </div>
+						<div class="col-md-6 col-lg-3 mb-3">
+						 <label>
+							Ubigeo
+						  </label>
+						  	<select class="form-control">
+								
+							</select>
+					  </div>
+					  <div class="col-md-6 col-lg-3 mb-3">
+						<div class="form-check">
+						  <label>
+							<input type="checkbox" class="form-check-input" value="" checked>
+							Fecha de Documento&nbsp; &nbsp; &nbsp; &nbsp; </label>
+						</div>  
+						  	<div class="input-group">
+						  		<div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-calendar"></i></span></div>
+								<input class="rangofechas form-control bg-white" readonly >
+							</div> 
+					  </div>
+						
+						<div class="col-md-6 col-lg-3 mb-3">
+						<div class="form-check">
+						  <label>
+							<input type="checkbox" class="form-check-input" value="">Fecha del Hecho
+						  </label>
+						</div>
+							
+						  	<div class="input-group">
+						  		<div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-calendar"></i></span></div>
+								
+								<input class="rangofechas form-control  bg-white" readonly>
+							</div>
+						  
+						</div>
+					  <div class="col-md-6 col-lg-4 mb-3">
+						  <div class="form-check">
+						  <label>
+							<input type="checkbox" class="form-check-input" value="">Involucrado
+						  </label>
+						</div>
+						  <select id="select-involucrado" class="form-control select-involucrado"></select>
+					  </div>
+						<div class="col-md-6 col-lg-3 mb-3">
+						  <label>Relación</label>
+						  <select class="form-control">
+							  <option value="" selected disabled>Seleccione Una</option>
+						    <option>Denunciante</option>
+							  <option>Denunciado</option>
+							  <option>Involucrado</option>
+							  <option>Todos</option>
+						  </select>
+					  </div>
+					  <div class="col-md-6 col-lg-2 mb-3">
+						  <label class="text-white">.</label>
+						  <button class="form-control btn btn-primary"><i class="fa fa-search"></i> Buscar</button>
+					  </div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+						<div class="table-responsive">
+					<table id="table-registros" class="table table-sm table-bordered table-hover">
+						<thead>
+							<tr class="text-center">
+								<th><i class="fa fa-send-o"></i></th>
+								<th>Tipo</th>
+								<th>Nro</th>
+								<th>Fecha</th>
+								<th>Ubigeo Hecho</th>
+								<th>Fecha / Hora (Hecho)</th>
+								<th>Clasificación</th>
+								<th>Estado</th>
+								<th class="text-center"><i class="fa fa-pencil-square-o"></i></th>
+							</tr>
+						</thead>
+						<tbody class="text-center">
+							<tr>
+								<td><button class="btn btn-primary btn-sm btn-procesar-table"><i class="fa fa-paper-plane  m-0"></i></button></td>
+								<td>Denuncia Regular</td>
+								<td>20200001</td>
+								<td>08/05/2020</td>
+								<td>LIMA - LIMA - SAN MARTIN DE PORRES</td>
+								<td>08/05/2020 - 00:50:00</td>
+								<td>Violencia Familiar</td>
+								<td>Recibido</td>
+								<td class="text-center">
+									<button class="btn btn-info btn-sm btn-detalle-table"><i class="fa fa-eye  m-0"></i></button>
+									<button class="btn btn-info btn-sm btn-imprimir-table"><i class="fa fa-print  m-0"></i></button>
+									<button class="btn btn-secondary btn-sm btn-archivar-table"><i class="fa fa-file-archive-o m-0"></i></button>
+									
+								</td>
+							</tr>
+							<tr class="text-info alert-success">
+								<td><button class="btn btn-info btn-sm btn-info-table" data-container="body" data-toggle="popover" data-content="Registro Enviado el 10/05/2020 11:35:25" data-original-title="Informacion de Envío"><i class="fa fa-info  m-0"></i></button>
+								</td>
+								<td>Denuncia Regular</td>
+								<td>20200001</td>
+								<td>08/05/2020</td>
+								<td>LIMA - LIMA - SAN MARTIN DE PORRES</td>
+								<td>08/05/2020 - 00:50:00</td>
+								<td>Violencia Familiar</td>
+								<td>Atendido</td>
+								<td class="text-center">
+									<button class="btn btn-info btn-sm btn-detalle-table"><i class="fa fa-eye  m-0"></i></button>
+									<button class="btn btn-info btn-sm btn-imprimir-table"><i class="fa fa-print  m-0"></i></button>
+								</td>
+							</tr>
+							<tr class="alert-success text-danger">
+								<td><button class="btn btn-info btn-sm btn-info-table" data-container="body" data-toggle="popover" data-content="Registro Archivado el 09/05/2020 20:55:25" data-original-title="Informacion de Archivo"><i class="fa fa-info  m-0"></i></button></td>
+								<td>Denuncia Regular</td>
+								<td>20200001</td>
+								<td>08/05/2020</td>
+								<td>LIMA - LIMA - SAN MARTIN DE PORRES</td>
+								<td>08/05/2020 - 00:50:00</td>
+								<td>Violencia Familiar</td>
+								<td>Archivado</td>
+								<td class="text-center">
+									<button class="btn btn-info btn-sm btn-detalle-table"><i class="fa fa-eye  m-0"></i></button>
+									<button class="btn btn-info btn-sm btn-imprimir-table"><i class="fa fa-print  m-0"></i></button>
+								</td>
+							</tr>
+							<tr class="alert-warning">
+								<td><button class="btn btn-info btn-sm btn-info-table" data-container="body" data-toggle="popover" data-content="Registro ingresado por CEOPOL  el 11/05/2020 01:20:54" data-original-title="Informacion de Registro"><i class="fa fa-info  m-0"></i></button></td>
+								<td>Nota Informativa</td>
+								<td>20204001</td>
+								<td>08/05/2020</td>
+								<td>LIMA - LIMA - SAN MARTIN DE PORRES</td>
+								<td>08/05/2020 - 00:50:00</td>
+								<td>Violencia Familiar</td>
+								<td>Registrado</td>
+								<td class="text-center">
+									<button class="btn btn-info btn-sm btn-detalle-table"><i class="fa fa-eye  m-0"></i></button>
+									<button class="btn btn-info btn-sm btn-imprimir-table"><i class="fa fa-print  m-0"></i></button>
+								</td>
+							</tr>
+							<tr class="alert-warning text-reset">
+								<td><button class="btn btn-primary btn-sm btn-procesar-table"><i class="fa fa-paper-plane  m-0"></i></button></td>
+								<td>Nota Informativa</td>
+								<td>20204001</td>
+								<td>08/05/2020</td>
+								<td>LIMA - LIMA - SAN MARTIN DE PORRES</td>
+								<td>08/05/2020 - 00:50:00</td>
+								<td>Violencia Familiar</td>
+								<td>Recibido</td>
+								<td class="text-center">
+									<button class="btn btn-info btn-sm btn-detalle-table"><i class="fa fa-eye  m-0"></i></button>
+									<button class="btn btn-info btn-sm btn-imprimir-table"><i class="fa fa-print  m-0"></i></button>
+									<button class="btn btn-secondary btn-sm btn-archivar-table"><i class="fa fa-file-archive-o m-0"></i></button>
+									
+								</td>
+							</tr>
+							<tr class="text-info alert-success">
+								<td><button class="btn btn-info btn-sm btn-info-table" data-container="body" data-toggle="popover" data-content="Registro Enviado el 10/05/2020 11:35:25" data-original-title="Informacion de Envío"><i class="fa fa-info  m-0"></i></button></td>
+								<td>Nota Informativa</td>
+								<td>20200001</td>
+								<td>08/05/2020</td>
+								<td>LIMA - LIMA - SAN MARTIN DE PORRES</td>
+								<td>08/05/2020 - 00:50:00</td>
+								<td>Violencia Familiar</td>
+								<td>Atendido</td>
+								<td class="text-center">
+									<button class="btn btn-info btn-sm btn-detalle-table"><i class="fa fa-eye  m-0"></i></button>
+									<button class="btn btn-info btn-sm btn-imprimir-table"><i class="fa fa-print  m-0"></i></button>
+								</td>
+							</tr>
+							<tr class="text-danger text-center alert-warning">
+								<td><button class="btn btn-info btn-sm btn-info-table" data-container="body" data-toggle="popover" data-content="Registro Archivado el 09/05/2020 20:55:25" data-original-title="Informacion de Archivo"><i class="fa fa-info  m-0"></i></button></td>
+								<td>Nota Informativa</td>
+								<td>20200001</td>
+								<td>08/05/2020</td>
+								<td>LIMA - LIMA - SAN MARTIN DE PORRES</td>
+								<td>08/05/2020 - 00:50:00</td>
+								<td>Violencia Familiar</td>
+								<td>Archivado</td>
+								<td class="text-center">
+									<button class="btn btn-info btn-sm btn-detalle-table"><i class="fa fa-eye  m-0"></i></button>
+									<button class="btn btn-info btn-sm btn-imprimir-table"><i class="fa fa-print  m-0"></i></button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+							<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-end">
+    <li class="page-item disabled">
+      <span class="page-link">Anterior</span>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item active">
+      <span class="page-link">
+        2
+        <span class="sr-only">(current)</span>
+      </span>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Siguiente</a>
+    </li>
+  </ul>
+</nav>
+				</div>
+						</div>
+					</div>
+				</div>
+              	
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </main>
+<div class="modal fade" id="modalInfoRegistro" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="background: image()">
+  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">REGISTRO N° 202000216545DR&nbsp; <small>(10/05/2020)</small></h4>
+        <h5>(ORDINARIO) LEY 30414</h5>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+	  	  <div class="row mb-3">
+				<div class="col-12 font-italic font-weight-bold">
+				<i class="fa fa-user-o"></i> DENUNCIANTE: (DNI) 43795932 - CIVIL
+			  </div>
+				<div class="col-lg-6">
+				  <strong>NOMBRES Y APELLIDOS:</strong> LUIS RICARDO LLAMPAZO MANDAMIENTO <strong>(CIVIL)</strong>
+			  </div>
+				<div class="col-lg-6">
+				  <strong>DIRECCIÓN:</strong> CALLE ONTARIO 254 - URB LA CAMPIÑA - CHORRILLOS - LIMA
+				</div>
+				<div class="col-lg-6">
+				  <strong>E-MAIL:</strong> luis.llampazo@gmail.com
+			  </div>
+				<div class="col-lg-6">
+				  <strong>TELÉFONO:</strong> 952501373
+				</div>
+			</div>
+		  <div class="row mb-3">
+				<div class="col-12 font-italic font-weight-bold"><em class="fa fa-map-marker"></em> UBICACIÓN DE LOS HECHOS:</div>
+		    <div class="col-lg-6"><strong>UBIGEO:</strong> LIMA - LIMA - LIMA <strong>(COMISARÍA DE LA FAMILIA)</strong></div>
+		    <div class="col-lg-6">
+				  <strong>DIRECCIÓN:</strong> CALLE ONTARIO 254 - URB LA CAMPIÑA - CHORRILLOS - LIMA
+			  </div>
+</div>
+		  <div class="row mb-3 text-justify">
+				<div class="col-12 font-italic font-weight-bold"><i class="fa fa-file-text-o"></i> DETALLE DE LOS HECHOS: (12/05/2020 - 20:30)</div>
+		    <div class="col-lg-12"><p>Lorem ipsum dolor sit amet consectetur adipiscing, elit ad duis massa conubia congue, sapien ante egestas iaculis aptent. Ac ullamcorper mattis torquent integer ad proin augue felis potenti sapien nascetur viverra, dictumst facilisis sed rutrum congue ornare ut penatibus malesuada gravida ultricies. Dictumst pulvinar vivamus senectus morbi cum torquent proin, aptent quam scelerisque primis ultrices facilisi per malesuada, aliquam cursus massa ridiculus class eu. Congue consequat senectus sapien malesuada feugiat parturient facilisis tempor ultricies quisque, imperdiet elementum platea molestie velit eros montes condimentum.</p> <p>Nunc condimentum metus rutrum lacus aenean posuere ridiculus duis, aliquet elementum rhoncus nisl dui eu in, libero mus nisi scelerisque cursus dis aliquam. Dapibus ornare egestas fringilla porttitor interdum pharetra iaculis velit, quisque primis ultricies suspendisse lobortis proin id turpis, curabitur pretium habitasse per ante class mus. Placerat dis hac parturient vel eget urna pellentesque, velit sociis at ante vivamus ac nostra suspendisse, libero sodales turpis inceptos sed morbi imperdiet, magnis gravida et ut mauris habitant.</p></div>
+			<div class="col-lg-12">
+				<p><strong><em>(Información para Identificación) </em></strong>Lorem ipsum dolor sit amet consectetur adipiscing, elit ad duis massa conubia congue, sapien ante egestas iaculis aptent. Ac ullamcorper mattis torquent integer ad proin augue felis potenti sapien nascetur viverra, dictumst facilisis sed rutrum congue ornare ut penatibus malesuada gravida ultricies. Dictumst pulvinar vivamus senectus morbi cum torquent proin, aptent quam scelerisque primis ultrices facilisi per malesuada, aliquam cursus massa ridiculus class eu. Congue consequat senectus sapien malesuada feugiat parturient facilisis tempor ultricies quisque, imperdiet elementum platea molestie velit eros montes condimentum.</p></div>
+		    <div class="col-lg-12"><strong><em>Clasificación</em>:</strong>
+		      <label class="badge badge-primary">Violencia Familiar</label>
+				<label class="badge badge-secondary">Violencia Contra la Mujer</label>
+				<label class="badge badge-secondary">Ebriedad</label>
+			</div>
+</div>
+			
+					  <div class="row mb-3">
+				<div class="col-12 font-italic font-weight-bold"><em class="fa fa-paperclip"></em> DOCUMENTOS ADJUNTOS:</div>
+		    	<div class="col-12">
+					<ul class="list-group list-group-flush">
+  <li class="list-group-item bg-transparent">Nota Informativa 020-2020 (COMANDANCIA GENERAL) <a href="#" class="fa fa-download"></a></li>
+</ul>
+				</div>
+		    </div>
+		  <div class="row">
+				<div class="col-12 font-italic text-black-50"><footer><em class="fa fa-user-secret"></em> Registrado por: ST3. FLORES ESTRADA ENRIQUE MOISES (OD N° 14 - DIRTTSV - LIMA)</footer>
+			  </div>
+		    	
+	      </div>
+	    </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>  
+	
+    <!-- Essential javascripts for application to work-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+	<script src="js/moment.min.js"></script>
+	  
+    <!-- The javascript plugin to display page loading on top-->
+    <script src="js/plugins/pace.min.js"></script>
+	<script src="js/plugins/daterangepicker.js"></script>
+	<script src="js/plugins/select2.min.js"></script>
+	<script src="js/sigepad-daterange.js"></script>
+    <script src="js/plugins/sweetalert.min.js"></script>
+	<script>
+	$('.btn-detalle-table').tooltip({title:'Ver detalle'});
+	$('.btn-imprimir-table').tooltip({title:'Imprimir una copia del registro'});
+	$('.btn-procesar-table').tooltip({title:'Enviar documento'});
+	$('.btn-archivar-table').tooltip({title:'Archivar documento'});
+	
+	$('[data-toggle="popover"]').popover({
+  trigger: 'focus'
+});
+		
+	$('#select-involucrado').select2({
+		width: '100%'
+	});
+	$('#table-registros tbody').on('click','.btn-procesar-table',function(){
+      	swal({
+      		title: "Esta seguro?",
+      		text: "El registro será enviado a la UTD IG PNP para su atención!",
+      		type: "warning",
+      		showCancelButton: true,
+      		confirmButtonText: "Si, enviar!",
+      		cancelButtonText: "No, cancelar!",
+      		closeOnConfirm: false,
+      		closeOnCancel: false
+      	}, function(isConfirm) {
+      		if (isConfirm) {
+      			swal("Enviado!", "El registro fue enviado exitosamente.", "success");
+      		} else {
+      			swal("Cancelado", "El envío fue cancelado", "error");
+      		}
+      	});
+      });
+	
+		$('#table-registros tbody').on('click','.btn-detalle-table',function(){
+      	$('#modalInfoRegistro').modal('show');
+		$('#modalInfoRegistro .modal-dialog .modal-content').css("background-image","url(images/imagecip.png)","background-color: rgba(0,0,0,0.8)");
+
+      });
+	
+	</script>
+  </body>
+</html>

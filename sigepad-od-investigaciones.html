@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
+    <!-- Twitter meta-->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:site" content="@pratikborsadiya">
+    <meta property="twitter:creator" content="@pratikborsadiya">
+    <!-- Open Graph Meta-->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Vali Admin">
+    <meta property="og:title" content="Vali - Free Bootstrap 4 admin theme">
+    <meta property="og:url" content="http://pratikborsadiya.in/blog/vali-admin">
+    <meta property="og:image" content="http://pratikborsadiya.in/blog/vali-admin/hero-social.png">
+    <meta property="og:description" content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
+    <title>OD Turno - SIGEPAD IG PNP</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Main CSS-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/daterangepicker.css">
+    <!-- Font-icon css-->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body class="app sidebar-mini">
+    <!-- Navbar-->
+    <header class="app-header"><a class="app-header__logo" href="index.html">SIGEPAD</a><!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+      <!-- Navbar Right Menu-->
+      <ul class="app-nav">
+        <!--Notification Menu-->
+        <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Show notifications"><i class="fa fa-bell-o fa-lg"></i></a>
+          <ul class="app-notification dropdown-menu dropdown-menu-right">
+            <li class="app-notification__title">Tienes 4 notificaciones Nuevas.</li>
+            <div class="app-notification__content">
+              <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></span>
+                  <div>
+                    <p class="app-notification__message">Lisa sent you a mail</p>
+                    <p class="app-notification__meta">2 min ago</p>
+                  </div></a></li>
+              <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-danger"></i><i class="fa fa-hdd-o fa-stack-1x fa-inverse"></i></span></span>
+                  <div>
+                    <p class="app-notification__message">Mail server not working</p>
+                    <p class="app-notification__meta">5 min ago</p>
+                  </div></a></li>
+              <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-success"></i><i class="fa fa-money fa-stack-1x fa-inverse"></i></span></span>
+                  <div>
+                    <p class="app-notification__message">Transaction complete</p>
+                    <p class="app-notification__meta">2 days ago</p>
+                  </div></a></li>
+              <div class="app-notification__content">
+                <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></span>
+                    <div>
+                      <p class="app-notification__message">Lisa sent you a mail</p>
+                      <p class="app-notification__meta">2 min ago</p>
+                    </div></a></li>
+                <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-danger"></i><i class="fa fa-hdd-o fa-stack-1x fa-inverse"></i></span></span>
+                    <div>
+                      <p class="app-notification__message">Mail server not working</p>
+                      <p class="app-notification__meta">5 min ago</p>
+                    </div></a></li>
+                <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-success"></i><i class="fa fa-money fa-stack-1x fa-inverse"></i></span></span>
+                    <div>
+                      <p class="app-notification__message">Transaction complete</p>
+                      <p class="app-notification__meta">2 days ago</p>
+                    </div></a></li>
+              </div>
+            </div>
+            <li class="app-notification__footer"><a href="#">See all notifications.</a></li>
+          </ul>
+        </li>
+        <!-- User Menu-->
+        <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-user fa-lg"></i></a>
+          <ul class="dropdown-menu settings-menu dropdown-menu-right">
+            <li><a class="dropdown-item" href="page-user.html"><i class="fa fa-cog fa-lg"></i> Configuracion</a></li>
+            <li><a class="dropdown-item" href="page-user.html"><i class="fa fa-user fa-lg"></i> Perfil</a></li>
+            <li><a class="dropdown-item" href="page-login.html"><i class="fa fa-sign-out fa-lg"></i> Salir</a></li>
+          </ul>
+        </li>
+      </ul>
+    </header>
+    <!-- Sidebar menu-->
+  <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+    <aside class="app-sidebar">
+		<div class="text-center">
+			 <img class="app-sidebar__user-avatar img-fluid m-0" src="images/default-user.jpg" alt="User Image">
+		</div>
+		<div class="app-sidebar__user">
+		<div class="text-center" style="width: 100%">
+		  <p class="app-sidebar__user-name font-weight-bold">CAPITAN S</p>
+	      <p class="app-sidebar__user-name"><small>LLAMPAZO MANDAMIENTO LUIS RICARDO</small></p>
+		  <p class="app-sidebar__user-name font-weight-bold">AUXILIAR</p>
+			<p class="app-sidebar__user-designation font-weight-bold">OD - 15</p>
+			<p class="app-sidebar__user-designation font-weight-bold">(SEDE TRANSITO)</p>
+		  
+        </div>
+      </div>
+      <ul class="app-menu">
+        <li><a class="app-menu__item" href="dashboard.html"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Resumen</span></a></li>
+        <li><a class="app-menu__item" href="dashboard.html"><em class="app-menu__icon fa fa-shield"></em><span class="app-menu__label">OD Turno</span></a></li>
+		<li><a class="app-menu__item" href="dashboard.html"><em class="app-menu__icon fa fa-shield"></em><span class="app-menu__label">Investigaciones AD</span></a></li>
+		<li><a class="app-menu__item" href="dashboard.html"><em class="app-menu__icon fa fa-shield"></em><span class="app-menu__label">Expedientes AD</span></a></li>
+      </ul>
+    </aside>
+    <main class="app-content">
+      <div class="app-title">
+        <div>
+          <h1><em class="fa fa-dashboard"></em> OD Turno</h1>
+          <p>Recepción de Denuncias y Otras comunicaciones de inconductas funcional&nbsp;</p>
+        </div>
+        <ul class="app-breadcrumb breadcrumb">
+          <li class="breadcrumb-item"><em class="fa fa-home fa-lg"></em></li>
+			
+          <li class="breadcrumb-item"><a href="#">OD Turno</a></li>
+			<li class="breadcrumb-item">Registro de denuncias</li>
+        </ul>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="tile">
+            <div class="tile-title-w-btn">
+              <h3 class="title">Registro de Denuncias y Otras Comunicaciones de Inconducta Funcional</h3>
+              <p><a class="btn btn-primary icon-btn" href=""><i class="fa fa-plus"></i>Nuevo Registro</a></p>
+            </div>
+			  <div class="tile-body">
+				  <div class="container-fluid">
+					  <div class="row mb-3">
+						<div class="col-md-6 col-lg-2 mb-3">
+						 <label>
+							Tipo de Comunicación
+						  </label>
+						  	<select class="form-control">
+								<option>Todos</option>
+								<option>Denuncia Regular</option>
+								<option>Nota Informativa</option>
+							</select>
+					  </div>
+						<div class="col-md-6 col-lg-2 mb-3">
+						 <label>
+							Estado
+						  </label>
+						  	<select class="form-control">
+								<option>Nuevo</option>
+								<option>Procesado</option>
+								<option>Todos</option>
+							</select>
+					  </div>
+						<div class="col-md-6 col-lg-2 mb-3">
+						 <label>
+							Clasificacion
+						  </label>
+						  	<select class="form-control">
+								
+							</select>
+					  </div>
+						<div class="col-md-6 col-lg-3 mb-3">
+						 <label>
+							Ubigeo
+						  </label>
+						  	<select class="form-control">
+								
+							</select>
+					  </div>
+					  <div class="col-md-6 col-lg-3 mb-3">
+						<div class="form-check">
+						  <label>
+							<input type="checkbox" class="form-check-input" value="" checked>
+Fecha de Comunicación</label>
+						</div>  
+						  	<div class="input-group">
+						  		<div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-calendar"></i></span></div>
+								<input class="rangofechas form-control bg-white" readonly >
+							</div> 
+					  </div>
+						
+						<div class="col-md-6 col-lg-3 mb-3">
+						<div class="form-check">
+						  <label>
+							<input type="checkbox" class="form-check-input" value="">Fecha del Hecho
+						  </label>
+						</div>
+							
+						  	<div class="input-group">
+						  		<div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-calendar"></i></span></div>
+								
+								<input class="rangofechas form-control  bg-white" readonly>
+							</div>
+						  
+						</div>
+					  <div class="col-md-6 col-lg-4 mb-3">
+						  <div class="form-check">
+						  <label>
+							<input type="checkbox" class="form-check-input" value="">Involucrado
+						  </label>
+						</div>
+						  <select id="select-involucrado" class="form-control select-involucrado"></select>
+					  </div>
+						<div class="col-md-6 col-lg-3 mb-3">
+						  <label>Relación</label>
+						  <select class="form-control">
+							  <option value="" selected disabled>Seleccione Una</option>
+						    <option>Denunciante</option>
+							  <option>Denunciado</option>
+							  <option>Agraviado</option>
+							  <option>Todos</option>
+						  </select>
+					  </div>
+					  <div class="col-md-6 col-lg-2 mb-3">
+						  <label class="text-white">.</label>
+						  <button class="form-control btn btn-primary"><i class="fa fa-search"></i> Buscar</button>
+					  </div>
+					</div>
+					  <div class="row mb-3">
+						  <div class="col-12 table-responsive">
+						  	  <table id="table-registros" class="table table-sm table-bordered table-hover">
+								  <thead>
+									  <tr>
+										  <th><i class="fa fa-plane"></i></th>
+										  <th>Nro Investigación</th>
+										  <th>Comunicación</th>
+										  <th>Ubigeo Hecho</th>
+										  <th>Fecha/Hora Hecho</th>
+										  <th>Progreso</th>
+										  <th>Prioridad</th>
+										  <th><i class="fa fa-edit"></i></th>
+									  </tr>
+								  </thead>
+								  <tbody>
+									  <tr>
+										  <td>
+										    <button class="btn btn-primary btn-sm btn-guardar-table"><i class="fa fa-floppy-o m-0"></i></button>
+										  </td>
+										  <td>20200125465</td>
+										  <td><a href="#"><i class="fa fa-file-text-o"></i> 202045465DR</a></td>
+										  
+										  <td>LIMA - LIMA - LIMA</td>
+										  <td>09/05/2020 - 10:03</td>
+										  <td><div class="form-control p-0">
+											  <div class="progress">
+  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+</div>
+											  </div></td>
+										  <td>
+										
+										  <div class="progress">
+  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+</div>
+										  </td>
+										  <td>
+										    <button class="btn btn-primary btn-sm btn-editar-table"><i class="fa fa-pencil m-0"></i></button>
+										    <button class="btn btn-primary btn-sm btn-denunciado-table"><em class="fa fa-user-o"></em>2</button>
+										    <button class="btn btn-primary btn-sm btn-agraviado-table"><i class="fa fa-user-circle-o"></i>2</button>
+											  <button class="btn btn-danger btn-sm btn-eliminar-table"><i class="fa fa-trash m-0"></i></button>
+										  </td>
+									  </tr>
+									  <tr  class="alert-success">
+										  <td>
+										    <button class="btn btn-info btn-sm btn-info-table" data-container="body" data-toggle="popover" data-content="Registro creado el 10/05/2020 11:35:25" data-original-title="Informacion de Registro"><i class="fa fa-info  m-0"></i></button>
+										  </td>
+										  <td>20200125465</td>
+										  <td>Denuncia Regular</td>
+										  
+										  <td>LIMA - LIMA - LIMA</td>
+										  <td>09/05/2020 - 10:03</td>
+										  <td>Ebriedad</td>
+										  <td> Procesada</td>
+										  <td>
+										    <button class="btn btn-info btn-sm btn-detalle-table"><i class="fa fa-eye m-0"></i></button>
+											<button class="btn btn-info btn-sm btn-denunciado-table"><i class="fa fa-user-o"></i>2</button>
+											<button class="btn btn-info btn-sm btn-agraviado-table"><i class="fa fa-user-circle-o"></i>2</button>
+											<button class="btn btn-info btn-sm btn-imprimir-table"><i class="fa fa-print"></i></button>
+
+										  </td>
+									  </tr>
+								    <tr class="alert-warning">
+										  <td>
+											  <button class="btn btn-warning btn-sm btn-recibir-table"><i class="fa fa-handshake-o m-0"></i></button>
+										  </td>
+										  <td>20200125465</td>
+										  <td>Nota Informativa</td>
+										  
+										  <td>LIMA - LIMA - LIMA</td>
+										  <td>09/05/2020 - 10:03</td>
+										  <td>Ebriedad</td>
+										  <td>Nuevo</td>
+										  <td>
+											  <button class="btn btn-info btn-sm btn-detalle-table"><i class="fa fa-eye m-0"></i></button>
+											  <button class="btn btn-info btn-sm btn-denunciado-table"><i class="fa fa-user-o"></i>2</button>
+											  <button class="btn btn-info btn-sm btn-agraviado-table"><i class="fa fa-user-circle-o"></i>2</button>
+										  </td>
+									  </tr>
+								    <tr class="alert-warning">
+										  <td>
+											  <button class="btn btn-primary btn-sm btn-guardar-table"><i class="fa fa-floppy-o m-0"></i></button>
+										  </td>
+										  <td>20200125465</td>
+										  <td>Nota Informativa</td>
+										  
+										  <td>LIMA - LIMA - LIMA</td>
+										  <td>09/05/2020 - 10:03</td>
+										  <td>Ebriedad</td>
+										  <td>Nuevo</td>
+										  <td>
+											  <button class="btn btn-primary btn-sm btn-editar-table"><i class="fa fa-pencil m-0"></i></button>
+											  <button class="btn btn-info btn-sm btn-denunciado-table"><i class="fa fa-user-o"></i>2</button>
+											  <button class="btn btn-info btn-sm btn-agraviado-table"><i class="fa fa-user-circle-o"></i>2</button>
+										  </td>
+									  </tr>
+									  <tr class="alert-success">
+										  <td>
+										    <button class="btn btn-info btn-sm btn-info-table" data-container="body" data-toggle="popover" data-content="Informacion adicional agregada el 10/05/2020 11:35:25" data-original-title="Informacion de Registro"><i class="fa fa-info  m-0"></i></button>
+										  </td>
+										  <td>20200125465</td>
+										  <td>Nota Informativa</td>
+										  
+										  <td>LIMA - LIMA - LIMA</td>
+										  <td>09/05/2020 - 10:03</td>
+										  <td>Ebriedad</td>
+										  <td> Procesada</td>
+										  <td>
+										    <button class="btn btn-info btn-sm btn-detalle-table"><i class="fa fa-eye m-0"></i></button>
+											  <button class="btn btn-info btn-sm btn-denunciado-table"><i class="fa fa-user-o"></i>2</button>
+											  <button class="btn btn-info btn-sm btn-agraviado-table"><i class="fa fa-user-circle-o"></i>2</button>
+											  <button class="btn btn-info btn-sm btn-imprimir-table"><i class="fa fa-print"></i></button>
+										  </td>
+									  </tr>
+								  </tbody>
+							  </table>
+						  </div>
+					  </div>
+				  </div>
+			  </div>
+          </div>
+        </div>
+      </div>
+		
+		
+	<!-- The Modal -->
+  <div class="modal fade" id="denunciadoModal">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Denunciados</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+						<div class="container">
+                      	<div class="row mb-2">
+							<div class="col-md-2">
+								<div class="animated-radio-button small">
+              <label>
+                <input type="radio" name="inputws" id="rbcip" value="1" checked><span class="label-text">CIP</span>
+              </label>
+            </div>
+								<input id="cipBuscado" class="form-control form-control-sm"/>
+							</div>
+							<div class="col-md-2">
+								<div class="animated-radio-button small">
+              <label>
+                <input type="radio" id="rbdni" name="inputws" value="2"><span class="label-text">DNI</span>
+              </label>
+            </div>
+			<input id="dniBuscado" name="inputs" +class="form-control form-control-sm" disabled>
+							</div>
+							<div class="col-md-2">
+								<div class="animated-radio-button small">
+              <label>
+                <input type="radio" id="rbnombre" name="inputws" value="3"><span class="label-text">Nombre</span>
+              </label>
+            </div>
+								<input id="nombreBuscado" class="form-control form-control-sm text-uppercase" disabled/>
+							</div>
+							<div class="col-md-2">
+								<label class="small">Apellido Paterno</label>
+								<input id="paternoBuscado" class="form-control form-control-sm text-uppercase" disabled/>
+							</div>
+							<div class="col-md-2">
+								<label class="small">Apellido Materno</label>
+								<input id="maternoBuscado" class="form-control form-control-sm text-uppercase" disabled/>
+							</div>
+<div class="col-md-2">
+			  <label class="text-white">.</label>
+								<button id="searchPersonal" class="btn btn-primary form-control form-control-sm"><em class="fa fa-search" aria-hidden="true"></em>Buscar</button>
+							</div>
+							
+							
+						</div>
+						
+						<div class="row mb-2"> </div>
+	
+							<div class="row mb-2">
+						 	<div class="col-md-12">
+								PERSONAL ENCONTRADO
+							</div>
+						</div>
+						<div class="row">
+						 	<div class="col-md-12 table-responsive border rounded p-3 mb-2">
+							  <table id="tablaPersonalEncontrado" class="table table-bordered small table-hover table-striped table-sm">
+									<thead>
+										<tr>
+											<th>CIP</th>
+											<th>DNI</th>
+											<th>GRADO</th>
+											<th>APELLIDOS Y NOMBRES</th>
+											<th>UNIDAD</th>
+											<th>SITUACION</th>
+											<th class="text-center"><em class="fa fa-level-down" aria-hidden="true"></em></th>
+										</tr>
+									</thead>
+									<tbody>
+										
+										
+									</tbody>
+								</table>
+							</div>
+							
+						</div>
+						<div class="row my-2">
+						 	<div class="col-md-12">
+								PERSONAL DENUNCIADO
+							</div>
+						</div>
+							<div class="row">
+						 	<div class="col-md-12 table-responsive border rounded p-3 mb-2">
+							  <table id="tablaPersonalDenunciado" class="table table-bordered small table-hover table-striped table-sm">
+									<thead>
+										<tr>
+											<th>CIP</th>
+											<th>DNI</th>
+											<th>GRADO</th>
+											<th>APELLIDOS Y NOMBRES</th>
+											<th>UNIDAD</th>
+											<th class="text-center"><em class="fa fa-level-up" aria-hidden="true"></em></th>
+										</tr>
+									</thead>
+									<tbody>
+										
+										
+									</tbody>
+								</table>
+							</div>
+							
+						</div>
+					  </div>
+                    </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+			<button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+        	<button class="btn btn-primary" type="button">Guardar Cambios</button>
+                      
+        </div>
+        
+      </div>
+    </div>
+  </div>	
+		<div class="modal fade" id="modalAgraviado">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Agraviados</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+			<div class="container">
+            	<div class="row mb-2">
+					<div class="col-12 font-weight-bold">
+						BUSQUEDA DE PERSONAS
+					</div>
+					<div class="col-md-2">
+						<label>Documento de Identidad</label>
+						<select class="form-control form-control-sm">
+							<option>D.N.I.</option>
+						</select>
+					</div>
+					<div class="col-md-2">
+						<label>Nro de Documento</label>
+						<input id="nombreBuscado" class="form-control form-control-sm text-uppercase" />
+					</div>
+					<div class="col-md-2">
+						<label>Nombre</label>
+						<input id="nombreBuscado" class="form-control form-control-sm text-uppercase" />
+					</div>
+					<div class="col-md-2">
+						<label class="small">Apellido Paterno</label>
+						<input id="paternoBuscado" class="form-control form-control-sm text-uppercase" />
+					</div>
+					<div class="col-md-2">
+						<label class="small">Apellido Materno</label>
+						<input id="maternoBuscado" class="form-control form-control-sm text-uppercase" />
+					</div>
+<div class="col-md-2">
+			  <label class="text-white">.</label>
+								<button id="searchPersonal" class="btn btn-primary form-control form-control-sm"><em class="fa fa-search" aria-hidden="true"></em>Buscar</button>
+						  </div>
+							
+							
+						</div>
+						
+						<div class="row mb-2"> </div>
+	
+							<div class="row mb-2">
+						 	<div class="col-md-12"><em>Persona Encontrada</em></div>
+						 	<div class="col-md-12 table-responsive rounded mb-2">
+							  <table id="tablaPersonalEncontrado" class="table table-bordered small table-hover table-striped table-sm">
+									<thead>
+										<tr>
+											<th>DOCUMENTO</th>
+											<th>NRO DOCUMENTO</th>
+											<th>APELLIDOS Y NOMBRES</th>
+											<th>NACIONALIDAD</th>
+											<th class="text-center"><em class="fa fa-level-down" aria-hidden="true"></em></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>D.N.I.</td>
+											<td>43795932</td>
+											<td>LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
+											<td>PERUANO</td>
+											<td class="text-center">
+												<button class="btn btn-primary btn-sm"><i class="fa fa-level-down"></i></button>
+								  			</th>
+										</tr>
+										
+									</tbody>
+							  </table>
+							</div>
+							
+						</div>
+						<div class="row my-2">
+						 	<div class="col-md-12 font-weight-bold">PERSONA AGRAVIADA</div>
+		  				</div>
+		  <div class="row">
+		  <div class="col-md-2">
+						<label>Documento de Identidad</label>
+						<select class="form-control form-control-sm">
+							<option>D.N.I.</option>
+							<option>C.E</option>
+							<option>Pasaporte</option>
+							<option>Menor de edad</option>
+						</select>
+					</div>
+					<div class="col-md-2">
+						<label>Nro de Documento</label>
+						<input id="nombreBuscado" class="form-control form-control-sm text-uppercase" />
+					</div>
+					<div class="col-md-2">
+						<label>Nombre</label>
+						<input id="nombreBuscado" class="form-control form-control-sm text-uppercase" />
+					</div>
+					<div class="col-md-2">
+						<label class="small">Apellido Paterno</label>
+						<input id="paternoBuscado" class="form-control form-control-sm text-uppercase" />
+					</div>
+					<div class="col-md-2">
+						<label class="small">Apellido Materno</label>
+						<input id="maternoBuscado" class="form-control form-control-sm text-uppercase" />
+					</div>
+<div class="col-md-2">
+			  <label class="text-white">.</label>
+								<button id="searchPersonal" class="btn btn-primary form-control form-control-sm"><em class="fa fa-plus" aria-hidden="true"></em>Agregar</button>
+						  </div>
+		  </div>
+		  
+		  <div class="row">
+						 	<div class="col-md-12 table-responsive pt-2 mb-2">
+							  <table id="tablaPersonalDenunciado" class="table table-bordered small table-hover table-striped table-sm">
+									<thead>
+										<tr>
+											<th>DOCUMENTO</th>
+											<th>NRO DOCUMENTO</th>
+											<th>APELLIDOS Y NOMBRES</th>
+											<th>NACIONALIDAD</th>
+											<th>PROCEDENCIA</th>
+											<th>PARENTESCO</th>
+											<th class="text-center"><em class="fa fa-trash-o" aria-hidden="true"></em></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>D.N.I.</td>
+											<td>43795932</td>
+											<td>LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
+											<td>PERUANO</td>
+											<td>POLICIAL</td>
+											<td>
+												<select class="form-control form-control-sm">
+													<option>NIGUNO</option>
+													<option>PADRE</option>
+													<option>MADRE</option>
+													<option>HIJO</option>
+													
+												</select>
+											</td>
+											<td class="text-center">
+												<button class="btn btn-secondary btn-sm"><i class="fa fa-trash-o m-0"></i></button>
+								  			</th>
+										</tr>
+										<tr>
+											<td>D.N.I.</td>
+											<td>43795932</td>
+											<td>LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
+											<td>PERUANO</td>
+											<td>
+												<select class="form-control form-control-sm">
+													<option>CIVIL</option>
+													<option>F.A.</option>
+												</select>
+											</td>
+											<td>
+												<select class="form-control form-control-sm">
+													<option>NIGUNO</option>
+													<option>PADRE</option>
+													<option>MADRE</option>
+													<option>HIJO</option>
+													
+												</select>
+											</td>
+											<td class="text-center">
+												<button class="btn btn-secondary btn-sm"><i class="fa fa-trash-o m-0"></i></button>
+								  			</th>
+										</tr>
+								<tr>
+											<td>C.E</td>
+											<td>102568987465</td>
+											<td>LLAMPAZO MANDAMIRICARDOENTO LUIS </td>
+											<td>
+												<input type=text class="form-control form-control-sm">
+											</td>
+											<td>
+												<select class="form-control form-control-sm">
+													<option>CIVIL</option>
+													<option>F.A.</option>
+												</select>
+											</td>
+											<td>
+												<select class="form-control form-control-sm">
+													<option>NIGUNO</option>
+													<option>PADRE</option>
+													<option>MADRE</option>
+													<option>HIJO</option>
+													
+												</select>
+											</td>
+											<td class="text-center">
+												<button class="btn btn-secondary btn-sm"><i class="fa fa-trash-o m-0"></i></button>
+								  			</th>
+										</tr>
+										
+									</tbody>
+							  </table>
+							</div>
+							
+						</div>
+					  </div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+			<button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+        	<button class="btn btn-primary" type="button">Guardar Cambios</button>
+                      
+        </div>
+        
+      </div>
+    </div>
+  </div>
+<div class="modal fade" id="modalInfoRegistro" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">REGISTRO N° 202000216545DR&nbsp; <small>(10/05/2020)</small></h4>
+        <h5>(ORDINARIO) LEY 30414</h5>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+	  	  <div class="row mb-3">
+				<div class="col-12 font-italic font-weight-bold"><em class="fa fa-user-o"></em> DENUNCIANTE: (DNI) 43795932 - CIVIL </div>
+				<div class="col-lg-6">
+				  <strong>NOMBRES Y APELLIDOS:</strong> LUIS RICARDO LLAMPAZO MANDAMIENTO <strong>(CIVIL)</strong>
+			  </div>
+				<div class="col-lg-6">
+				  <strong>DIRECCIÓN:</strong> CALLE ONTARIO 254 - URB LA CAMPIÑA - CHORRILLOS - LIMA
+				</div>
+				<div class="col-lg-6">
+				  <strong>E-MAIL:</strong> luis.llampazo@gmail.com
+			  </div>
+				<div class="col-lg-6">
+				  <strong>TELÉFONO:</strong> 952501373
+				</div>
+			</div>
+		  <div class="row mb-3">
+				<div class="col-12 font-italic font-weight-bold"><em class="fa fa-map-marker"></em> UBICACIÓN DE LOS HECHOS:</div>
+		    <div class="col-lg-6"><strong>UBIGEO:</strong> LIMA - LIMA - LIMA <strong>(COMISARÍA DE LA FAMILIA)</strong></div>
+		    <div class="col-lg-6">
+				  <strong>DIRECCIÓN:</strong> CALLE ONTARIO 254 - URB LA CAMPIÑA - CHORRILLOS - LIMA
+			  </div>
+</div>
+		  <div class="row mb-3 text-justify">
+				<div class="col-12 font-italic font-weight-bold"><i class="fa fa-file-text-o"></i> DETALLE DE LOS HECHOS: (12/05/2020 - 20:30)</div>
+		    <div class="col-lg-12"><p>Lorem ipsum dolor sit amet consectetur adipiscing, elit ad duis massa conubia congue, sapien ante egestas iaculis aptent. Ac ullamcorper mattis torquent integer ad proin augue felis potenti sapien nascetur viverra, dictumst facilisis sed rutrum congue ornare ut penatibus malesuada gravida ultricies. Dictumst pulvinar vivamus senectus morbi cum torquent proin, aptent quam scelerisque primis ultrices facilisi per malesuada, aliquam cursus massa ridiculus class eu. Congue consequat senectus sapien malesuada feugiat parturient facilisis tempor ultricies quisque, imperdiet elementum platea molestie velit eros montes condimentum.</p> <p>Nunc condimentum metus rutrum lacus aenean posuere ridiculus duis, aliquet elementum rhoncus nisl dui eu in, libero mus nisi scelerisque cursus dis aliquam. Dapibus ornare egestas fringilla porttitor interdum pharetra iaculis velit, quisque primis ultricies suspendisse lobortis proin id turpis, curabitur pretium habitasse per ante class mus. Placerat dis hac parturient vel eget urna pellentesque, velit sociis at ante vivamus ac nostra suspendisse, libero sodales turpis inceptos sed morbi imperdiet, magnis gravida et ut mauris habitant.</p></div>
+			<div class="col-lg-12">
+				<p><strong><em>(Información para Identificación) </em></strong>Lorem ipsum dolor sit amet consectetur adipiscing, elit ad duis massa conubia congue, sapien ante egestas iaculis aptent. Ac ullamcorper mattis torquent integer ad proin augue felis potenti sapien nascetur viverra, dictumst facilisis sed rutrum congue ornare ut penatibus malesuada gravida ultricies. Dictumst pulvinar vivamus senectus morbi cum torquent proin, aptent quam scelerisque primis ultrices facilisi per malesuada, aliquam cursus massa ridiculus class eu. Congue consequat senectus sapien malesuada feugiat parturient facilisis tempor ultricies quisque, imperdiet elementum platea molestie velit eros montes condimentum.</p></div>
+		    <div class="col-lg-12"><strong><em>Clasificación</em>:</strong>
+		      <label class="badge badge-primary">Violencia Familiar</label>
+				<label class="badge badge-secondary">Violencia Contra la Mujer</label>
+				<label class="badge badge-secondary">Ebriedad</label>
+			</div>
+</div>
+			
+					  <div class="row mb-3">
+				<div class="col-12 font-italic font-weight-bold"><em class="fa fa-paperclip"></em> DOCUMENTOS ADJUNTOS:</div>
+		    	<div class="col-12">
+					<ul class="list-group list-group-flush">
+  <li class="list-group-item bg-transparent">Nota Informativa 020-2020 (COMANDANCIA GENERAL) <a href="#" class="fa fa-download"></a></li>
+</ul>
+				</div>
+		    </div>
+			<div class="row mb-3">
+				<div class="col-lg-6 font-italic font-weight-bold">
+					<label><i class="fa fa-user-o"></i> DENUNCIADO (S)</label>
+					<ul class="list-group list-group-flush">
+					  	<li class="list-group-item bg-transparent font-weight-normal">CAP S. LLAMPAZO MANDAMIENTO LUIS RICARDO</li>
+						<li class="list-group-item bg-transparent font-weight-normal">CAP S. MEDINA ZEGARRA GUILLERMO ENRIQUE</li>
+					</ul>
+			  </div>
+				<div class="col-lg-6 font-italic font-weight-bold">
+				<label><i class="fa fa-user-o"></i> AGRAVIADO (S)</label>
+					<ul class="list-group list-group-flush">
+					  	<li class="list-group-item bg-transparent font-weight-normal">LLAMPAZO MANDAMIENTO LUIS RICARDO</li>
+						<li class="list-group-item bg-transparent font-weight-normal">MEDINA ZEGARRA GUILLERMO ENRIQUE</li>
+					</ul>
+			  </div>
+			</div>
+		  <div class="row">
+				<div class="col-12 font-italic text-black-50"><footer><em class="fa fa-pencil"></em> Registrado por: ST3. FLORES ESTRADA ENRIQUE MOISES (OD N° 14 - DIRTTSV - LIMA)</footer>
+			  </div>
+		    	
+	      </div>
+	    </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>  
+    </main>
+    <!-- Essential javascripts for application to work-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+	<script src="js/moment.min.js"></script>
+    <!-- The javascript plugin to display page loading on top-->
+    <script src="js/plugins/pace.min.js"></script>
+	<script src="js/plugins/daterangepicker.js"></script>
+	<script src="js/plugins/jquery.dataTables.min.js"></script>
+	<script src="js/plugins/dataTables.bootstrap4.min.js"></script>
+	  <script type="text/javascript" src="js/plugins/sweetalert.min.js"></script>
+    <!-- Page specific javascripts-->
+	<script src="js/sigepad-daterange.js"></script>
+	  <script>
+		  $('.btn-guardar-table').tooltip({title:'Guardar'});
+		  $('.btn-info-table').tooltip({title:'Información'});
+		  $('.btn-recibir-table').tooltip({title:'Recibir documento externo'});
+		  
+		  $('.btn-editar-table').tooltip({title:'Modificar'});
+		  $('.btn-denunciado-table').tooltip({title:'Denunciados'});
+		  $('.btn-agraviado-table').tooltip({title:'Agraviados'});
+		  $('.btn-eliminar-table').tooltip({title:'Eliminar'});
+		  $('.btn-detalle-table').tooltip({title:'Ver'});
+		  $('.btn-imprimir-table').tooltip({title:'Imprimir'});
+		  
+		  $('#table-registros tbody').on('click','.btn-denunciado-table',function(){
+			  $('#denunciadoModal').modal('show');
+		  });
+		  $('#table-registros tbody').on('click','.btn-agraviado-table',function(){
+			  $('#modalAgraviado').modal('show');
+		  });
+		  
+		  $('#table-registros tbody').on('click','.btn-eliminar-table',function(){
+      	swal({
+      		title: "¿Está seguro?",
+      		text: "No podrá recuperar el actual registro!",
+      		type: "warning",
+      		showCancelButton: true,
+      		confirmButtonText: "Si, eliminar!",
+      		cancelButtonText: "No, cancelar!",
+      		closeOnConfirm: false,
+      		closeOnCancel: false
+      	}, function(isConfirm) {
+      		if (isConfirm) {
+      			swal("Eliminado!", "El registro fue eliminado.", "success");
+      		} else {
+      			swal("Cancelado", "La eliminacion fue cancelada", "error");
+      		}
+      	});
+      });
+		  
+		$('#table-registros tbody').on('click','.btn-guardar-table',function(){
+      	swal({
+      		title: "¿Está seguro?",
+      		text: "El registro sera ingresado para su atención y no podrá ser modificado!",
+      		type: "warning",
+      		showCancelButton: true,
+      		confirmButtonText: "Si, guardar!",
+      		cancelButtonText: "No, cancelar!",
+      		closeOnConfirm: false,
+      		closeOnCancel: false
+      	}, function(isConfirm) {
+      		if (isConfirm) {
+      			swal("Guardado!", "El registro fue guardado exitosamente.", "success");
+      		} else {
+      			swal("Cancelado", "El registro no fue guardado", "error");
+      		}
+      	});
+      });
+	
+	  $('#table-registros tbody').on('click','.btn-recibir-table',function(){
+      	swal({
+      		title: "¿Está seguro?",
+      		text: "Se recibira el documento externo para su clasificacion!",
+      		type: "warning",
+      		showCancelButton: true,
+      		confirmButtonText: "Si, recibir!",
+      		cancelButtonText: "No, cancelar!",
+      		closeOnConfirm: false,
+      		closeOnCancel: false
+      	}, function(isConfirm) {
+      		if (isConfirm) {
+      			swal("recibido!", "El registro fue recibido.", "success");
+      		} else {
+      			swal("Cancelado", "El registro no fue recibido", "error");
+      		}
+      	});
+      });
+		  
+		$('#table-registros').DataTable({
+			'columns': [{ 'orderable': false },
+	    	   null,
+	    	   null,
+	    		null,
+	    		null,
+	    		null,
+	    		null,
+	    		{ 'orderable': false }
+	    	 ],
+			"order": [[ 1, "desc" ]],
+			"columnDefs": [
+	    		    { className: "text-center", "targets": [ 0,1,2,3,4,5,6,7 ] }
+	    		  ]
+		});
+		  	$('[data-toggle="popover"]').popover({
+  trigger: 'focus'
+});
+		  $('#table-registros tbody').on('click','.btn-detalle-table',function(){
+      	$('#modalInfoRegistro').modal('show');
+		$('#modalInfoRegistro .modal-dialog .modal-content').css("background-image","url(images/imagecip.png)","background-color: rgba(0,0,0,0.8)");
+
+      });
+	  </script>
+    
+  </body>
+</html>
