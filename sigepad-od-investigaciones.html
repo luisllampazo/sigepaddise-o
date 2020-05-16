@@ -216,12 +216,13 @@ Fecha de Comunicación</label>
 								  <thead>
 									  <tr>
 										  <th><i class="fa fa-plane"></i></th>
+										  <th>Fecha Envío</th>
 										  <th>Nro Investigación</th>
 										  <th>Comunicación</th>
 										  <th>Ubigeo Hecho</th>
 										  <th>Fecha/Hora Hecho</th>
-										  <th>Fecha de <br>Prescripción</th>
-										  <th>Progreso</th>
+										  <th>Prescripcion / Caducidad</th>
+										  <th>Avance</th>
 										  <th><i class="fa fa-edit"></i></th>
 									  </tr>
 								  </thead>
@@ -230,6 +231,32 @@ Fecha de Comunicación</label>
 										  <td>
 											  <button class="btn btn-warning btn-sm btn-recibir-table"><i class="fa fa-handshake-o m-0"></i></button>
 										  </td>
+										  <td>09/05/2020 - 10:03</td>
+										  <td><a href="#"><i class="fa fa-file-text-o"></i> 20200125465</a></td>
+										  <td><a href="#"><i class="fa fa-file-text-o"></i> 202045465DR</a></td>
+										  
+										  <td>LIMA - LIMA - LIMA</td>
+										  <td>09/05/2020 - 10:03</td>
+										  <td ><label>10/05/2021 | 324 días</label></td>
+										  <td class="align-middle" style="background:#1C8060; background: linear-gradient(90deg, rgba(28,128,96,1) 50%, rgba(222, 226, 230,1) 50%); ">
+											  
+											<button class="btn btn-dark m-0 badge badge-dark">50%</button>
+											  
+										  </td>
+										  <td>
+									<button class="btn btn-info btn-sm btn-detalle-table"><i class="fa fa-eye m-0"></i></button>
+
+										    <button class="btn btn-primary btn-sm btn-editar-table"><i class="fa fa-pencil m-0"></i></button>
+										    <button class="btn btn-primary btn-sm btn-denunciado-table"><em class="fa fa-user-o"></em>2</button>
+										    <button class="btn btn-primary btn-sm btn-agraviado-table"><i class="fa fa-user-circle-o"></i>2</button>
+											  <button class="btn btn-danger btn-sm btn-eliminar-table"><i class="fa fa-trash m-0"></i></button>
+										  </td>
+									  </tr>
+									  <tr>
+										  <td>
+											  <button class="btn btn-warning btn-sm btn-recibir-table"><i class="fa fa-handshake-o m-0"></i></button>
+										  </td>
+										  <td>09/05/2020 - 10:03</td>
 										  <td><a href="#"><i class="fa fa-file-text-o"></i> 20200125465</a></td>
 										  <td><a href="#"><i class="fa fa-file-text-o"></i> 202045465DR</a></td>
 										  
@@ -252,6 +279,7 @@ Fecha de Comunicación</label>
 										  <td>
 										    <button class="btn btn-info btn-sm btn-info-table" data-container="body" data-toggle="popover" data-content="Registro creado el 10/05/2020 11:35:25" data-original-title="Informacion de Registro"><i class="fa fa-info  m-0"></i></button>
 										  </td>
+										  <td>09/05/2020 - 10:03</td>
 										  <td>20200125465</td>
 										  <td>Denuncia Regular</td>
 										  
@@ -271,6 +299,7 @@ Fecha de Comunicación</label>
 										  <td>
 											  <button class="btn btn-warning btn-sm btn-recibir-table"><i class="fa fa-handshake-o m-0"></i></button>
 										  </td>
+										<td>09/05/2020 - 10:03</td>
 										  <td>20200125465</td>
 										  <td>Nota Informativa</td>
 										  
@@ -288,6 +317,7 @@ Fecha de Comunicación</label>
 										  <td>
 											  <button class="btn btn-primary btn-sm btn-guardar-table"><i class="fa fa-floppy-o m-0"></i></button>
 										  </td>
+										<td>09/05/2020 - 10:03</td>
 										  <td>20200125465</td>
 										  <td>Nota Informativa</td>
 										  
@@ -305,6 +335,7 @@ Fecha de Comunicación</label>
 										  <td>
 										    <button class="btn btn-info btn-sm btn-info-table" data-container="body" data-toggle="popover" data-content="Informacion adicional agregada el 10/05/2020 11:35:25" data-original-title="Informacion de Registro"><i class="fa fa-info  m-0"></i></button>
 										  </td>
+										  <td>09/05/2020 - 10:03</td>
 										  <td>20200125465</td>
 										  <td>Nota Informativa</td>
 										  
@@ -842,6 +873,7 @@ Fecha de Comunicación</label>
 		  
 		$('#table-registros').DataTable({
 			'columns': [{ 'orderable': false },
+				null,		
 	    	   null,
 	    	   null,
 	    		null,
